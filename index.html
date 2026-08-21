@@ -1,55 +1,1390 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>شركة أبراج الماضونة</title>
- <style>
- body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f4f4f4; color: #333; }
- header { background: #00255a; color: #fff; padding: 2rem 0; text-align: center; }
- nav { background: #333; color: #fff; padding: 0.5rem 0; text-align: center; }
- nav a { color: #fff; margin: 0 15px; text-decoration: none; }
- .container { padding: 2rem; max-width: 1000px; margin: auto; background: #fff; }
- .services { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 2rem; }
- .service-box { background: #e2e8f0; padding: 1.5rem; border-radius: 8px; width: 45%; margin-bottom: 2rem; }
- footer { background: #00255a; color: #fff; text-align: center; padding: 1rem 0; position: fixed; width: 100%; bottom: 0; }
- </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>أبراج الماضونة | الحلول الأمنية والهندسية المتكاملة</title>
+
+  <meta name="description" content="شركة أبراج الماضونة للخدمات الأمنية والهندسية المساندة في الأردن. حلول أمنية متكاملة وحماية المنشآت والمواقع بكفاءة واحترافية.">
+  <meta name="theme-color" content="#07111f">
+
+  <style>
+    :root {
+      --navy: #07111f;
+      --navy-2: #0b1b30;
+      --navy-3: #102942;
+      --gold: #c9a45c;
+      --gold-light: #e4c986;
+      --white: #ffffff;
+      --text: #17202b;
+      --muted: #6b7684;
+      --light: #f5f7fa;
+      --border: rgba(255,255,255,.1);
+      --shadow: 0 20px 60px rgba(0,0,0,.12);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================== */
+
+    .topbar {
+      background: #040b14;
+      color: rgba(255,255,255,.75);
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+
+    .topbar-inner {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .topbar-contact {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .topbar strong {
+      color: var(--gold-light);
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7,17,31,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      min-width: max-content;
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(201,164,92,.65);
+      display: grid;
+      place-items: center;
+      color: var(--gold-light);
+      font-size: 21px;
+      font-weight: 800;
+      transform: rotate(45deg);
+    }
+
+    .brand-mark span {
+      transform: rotate(-45deg);
+    }
+
+    .brand-text strong {
+      display: block;
+      color: white;
+      font-size: 18px;
+      letter-spacing: .5px;
+    }
+
+    .brand-text small {
+      display: block;
+      color: var(--gold-light);
+      font-size: 10px;
+      letter-spacing: 1.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      color: rgba(255,255,255,.78);
+      font-size: 14px;
+      transition: .25s ease;
+    }
+
+    nav a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-cta {
+      background: var(--gold);
+      color: #111 !important;
+      padding: 11px 20px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold-light);
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      min-height: 680px;
+      position: relative;
+      overflow: hidden;
+      color: white;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(201,164,92,.16), transparent 30%),
+        linear-gradient(115deg, #040b14 0%, #0a1b2f 55%, #102942 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 55px 55px;
+      mask-image: linear-gradient(to bottom, black, transparent);
+    }
+
+    .hero-inner {
+      min-height: 680px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 70px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 13px;
+      border: 1px solid rgba(201,164,92,.35);
+      color: var(--gold-light);
+      background: rgba(201,164,92,.07);
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .hero-badge::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 15px var(--gold);
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 5vw, 68px);
+      line-height: 1.15;
+      margin-bottom: 24px;
+      letter-spacing: -1.5px;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero p {
+      color: rgba(255,255,255,.72);
+      max-width: 650px;
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 25px;
+      border-radius: 6px;
+      font-weight: 700;
+      transition: .25s ease;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.25);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    /* Hero visual */
+
+    .hero-visual {
+      position: relative;
+      height: 450px;
+      display: grid;
+      place-items: center;
+    }
+
+    .shield {
+      width: 290px;
+      height: 340px;
+      position: relative;
+      clip-path: polygon(
+        50% 0,
+        92% 14%,
+        86% 65%,
+        50% 100%,
+        14% 65%,
+        8% 14%
+      );
+      background:
+        linear-gradient(145deg, rgba(201,164,92,.35), rgba(201,164,92,.03)),
+        rgba(255,255,255,.04);
+      border: 1px solid rgba(201,164,92,.5);
+      display: grid;
+      place-items: center;
+      box-shadow:
+        0 0 100px rgba(201,164,92,.12),
+        inset 0 0 60px rgba(201,164,92,.05);
+    }
+
+    .shield::after {
+      content: "أ";
+      color: var(--gold-light);
+      font-size: 90px;
+      font-weight: 800;
+      text-shadow: 0 0 35px rgba(201,164,92,.3);
+    }
+
+    .security-card {
+      position: absolute;
+      background: rgba(10,27,47,.9);
+      border: 1px solid rgba(255,255,255,.1);
+      backdrop-filter: blur(12px);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+      border-radius: 12px;
+    }
+
+    .security-card.one {
+      top: 55px;
+      right: 5px;
+    }
+
+    .security-card.two {
+      bottom: 55px;
+      left: 5px;
+    }
+
+    .security-card strong {
+      display: block;
+      color: white;
+      font-size: 20px;
+    }
+
+    .security-card span {
+      color: rgba(255,255,255,.55);
+      font-size: 12px;
+    }
+
+    /* =========================
+       STATS
+    ========================== */
+
+    .stats {
+      background: white;
+      position: relative;
+      margin-top: -55px;
+      z-index: 5;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: white;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .stat {
+      padding: 30px 20px;
+      text-align: center;
+      border-left: 1px solid #edf0f3;
+    }
+
+    .stat:last-child {
+      border-left: 0;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--navy);
+      font-size: 34px;
+      line-height: 1;
+      margin-bottom: 9px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       SECTIONS
+    ========================== */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
+
+    .section-heading.center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #9a7736;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 45px);
+      line-height: 1.25;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-visual {
+      min-height: 430px;
+      background:
+        linear-gradient(145deg, rgba(7,17,31,.95), rgba(16,41,66,.9));
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 35px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-visual::before {
+      content: "SECURITY";
+      position: absolute;
+      font-size: 90px;
+      font-weight: 900;
+      color: rgba(255,255,255,.025);
+      transform: rotate(-90deg);
+      left: -75px;
+      top: 120px;
+    }
+
+    .about-box {
+      position: relative;
+      z-index: 1;
+      border-right: 3px solid var(--gold);
+      padding-right: 18px;
+      color: white;
+    }
+
+    .about-box strong {
+      display: block;
+      font-size: 30px;
+      color: var(--gold-light);
+    }
+
+    .about-box span {
+      color: rgba(255,255,255,.6);
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 25px;
+    }
+
+    .check-list li {
+      margin-bottom: 12px;
+      padding-right: 28px;
+      position: relative;
+      color: #293440;
+      font-weight: 600;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      right: 0;
+      color: #a9823e;
+      font-weight: 900;
+    }
+
+    /* =========================
+       SERVICES
+    ========================== */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service {
+      padding: 32px;
+      border: 1px solid #e6eaf0;
+      border-radius: var(--radius);
+      transition: .3s ease;
+      background: white;
+    }
+
+    .service:hover {
+      transform: translateY(-7px);
+      border-color: rgba(201,164,92,.45);
+      box-shadow: 0 20px 50px rgba(7,17,31,.08);
+    }
+
+    .service-number {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: var(--navy);
+      color: var(--gold-light);
+      display: grid;
+      place-items: center;
+      font-size: 23px;
+      margin-bottom: 22px;
+    }
+
+    .service h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       WHY US
+    ========================== */
+
+    .why {
+      background: var(--navy);
+      color: white;
+    }
+
+    .why .section-heading h2 {
+      color: white;
+    }
+
+    .why .section-heading p {
+      color: rgba(255,255,255,.58);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      border: 1px solid rgba(255,255,255,.09);
+      background: rgba(255,255,255,.025);
+      padding: 30px 24px;
+      border-radius: 14px;
+    }
+
+    .why-card strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      color: rgba(255,255,255,.58);
+      font-size: 14px;
+    }
+
+    /* =========================
+       SECTORS
+    ========================== */
+
+    .sectors {
+      background: #f7f8fa;
+    }
+
+    .sectors-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .sector {
+      min-height: 170px;
+      border-radius: 15px;
+      padding: 25px;
+      background: white;
+      border: 1px solid #e7ebef;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      transition: .3s;
+    }
+
+    .sector:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,.07);
+    }
+
+    .sector small {
+      color: var(--gold);
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .sector h3 {
+      color: var(--navy);
+    }
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta {
+      padding: 90px 0;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(201,164,92,.12), transparent 30%),
+        var(--navy-2);
+      color: white;
+    }
+
+    .cta-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .cta h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,.6);
+      max-width: 650px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      padding: 30px;
+      background: var(--light);
+      border-radius: 16px;
+      border: 1px solid #e7ebef;
+    }
+
+    .contact-card small {
+      color: var(--gold);
+      font-weight: 800;
+    }
+
+    .contact-card h3 {
+      color: var(--navy);
+      margin: 6px 0 5px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #040b14;
+      color: white;
+      padding: 65px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 60px;
+      padding-bottom: 45px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer li {
+      color: rgba(255,255,255,.5);
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: rgba(255,255,255,.35);
+      font-size: 12px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 950px) {
+      .hero-inner,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-inner {
+        padding: 90px 0 110px;
+      }
+
+      .hero-visual {
+        height: 380px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stat:nth-child(2) {
+        border-left: 0;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .topbar-inner {
+        justify-content: center;
+      }
+
+      .topbar-contact {
+        justify-content: center;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      .nav {
+        min-height: 70px;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .services-grid,
+      .why-grid,
+      .sectors-grid,
+      .contact-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .stat {
+        border-left: 0;
+        border-bottom: 1px solid #edf0f3;
+      }
+
+      .stat strong {
+        font-size: 28px;
+      }
+
+      .cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
+
 <body>
- <header>
- <h1>شركة أبراج الماضونة</h1>
- <p>للخدمات الهندسية والأمنية المساندة</p>
- </header>
- <nav>
- <a href="#about">من نحن</a>
- <a href="#services">خدماتنا</a>
- <a href="#contact">اتصل بنا</a>
- </nav>
- <div class="container">
- <section id="about">
- <h2>من نحن</h2>
- <p>نحن شركة أبراج الماضونة، نقدم حلولاً هندسية وأمنية مساندة بمعايير عالية من الكفاءة والاحترافية لدعم أعمالكم وتقديم أفضل الخدمات المساندة.</p>
- </section>
- <section id="services">
- <h2>خدماتنا</h2>
- <div class="services">
- <div class="service-box">
- <h3>الخدمات الأمنية</h3>
- <p>توفير حراسات أمنية مجهزة ومدربة لحماية المنشآت والمواقع المختلفة.</p>
- </div>
- <div class="service-box">
- <h3>الخدمات الهندسية المساندة</h3>
- <p>تقديم الدعم الهندسي والفني للمشاريع والعمليات التشغيلية.</p>
- </div>
- </div>
- </section>
- <section id="contact">
- <h2>اتصل بنا</h2>
- <p>يمكنكم التواصل معنا عبر البريد الإلكتروني أو زيارة مقرنا في سحاب، عمان، الأردن.</p>
- </section>
- </div>
- <footer>
- <p>جميع الحقوق محفوظة &copy; 2026 شركة أبراج الماضونة</p>
- </footer>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div>
+        <strong>أبراج الماضونة</strong>
+        <span> — حلول أمنية وهندسية متكاملة</span>
+      </div>
+
+      <div class="topbar-contact">
+        <span>📍 سحاب، عمّان، الأردن</span>
+        <span>متاحون لخدمتكم</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+
+      <a href="#home" class="brand">
+        <div class="brand-mark">
+          <span>أ</span>
+        </div>
+
+        <div class="brand-text">
+          <strong>أبراج الماضونة</strong>
+          <small>SECURITY & ENGINEERING</small>
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#sectors">القطاعات</a></li>
+          <li><a href="#why">لماذا نحن</a></li>
+          <li><a href="#contact" class="nav-cta">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <div>
+          <div class="hero-badge">
+            ثقة • احتراف • جاهزية
+          </div>
+
+          <h1>
+            الحماية ليست خدمة فقط،
+            <span>بل مسؤولية.</span>
+          </h1>
+
+          <p>
+            شركة أبراج الماضونة تقدم حلولًا أمنية وهندسية مساندة
+            مصممة لحماية المنشآت والأصول والأفراد ودعم استمرارية
+            الأعمال بأعلى مستويات الانضباط والاحترافية.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              اطلب استشارة
+            </a>
+
+            <a href="#services" class="btn btn-outline">
+              اكتشف خدماتنا
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+
+          <div class="security-card one">
+            <strong>24/7</strong>
+            <span>جاهزية ومتابعة</span>
+          </div>
+
+          <div class="shield"></div>
+
+          <div class="security-card two">
+            <strong>أمنك أولًا</strong>
+            <span>حلول مصممة حسب احتياجاتك</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="container stats-grid">
+
+        <div class="stat">
+          <strong>24/7</strong>
+          <span>جاهزية ومتابعة</span>
+        </div>
+
+        <div class="stat">
+          <strong>100%</strong>
+          <span>التزام بالاحترافية</span>
+        </div>
+
+        <div class="stat">
+          <strong>360°</strong>
+          <span>رؤية متكاملة للأمن</span>
+        </div>
+
+        <div class="stat">
+          <strong>1</strong>
+          <span>شريك تثق به</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container about-grid">
+
+        <div class="about-visual">
+          <div class="about-box">
+            <strong>أبراج الماضونة</strong>
+            <span>شريككم في الأمن والدعم الهندسي</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+
+          <div class="section-heading">
+            <div class="eyebrow">من نحن</div>
+
+            <h2>
+              نبني بيئة أكثر أمنًا
+              لأعمال أكثر استقرارًا
+            </h2>
+
+            <p>
+              نحن في شركة أبراج الماضونة نؤمن أن الأمن الفعال يبدأ
+              من فهم طبيعة العمل والمخاطر والاحتياجات التشغيلية
+              لكل منشأة.
+            </p>
+          </div>
+
+          <p>
+            نقدم خدمات أمنية وهندسية مساندة تساعد المؤسسات والشركات
+            والمنشآت على حماية أصولها وتنظيم عملياتها ورفع مستوى
+            الجاهزية والاستجابة.
+          </p>
+
+          <p>
+            نركز على الانضباط، الموثوقية، جودة التنفيذ، وسرعة
+            الاستجابة، مع تصميم حلول تتناسب مع طبيعة كل موقع.
+          </p>
+
+          <ul class="check-list">
+            <li>منهجية عمل احترافية ومنظمة</li>
+            <li>حلول قابلة للتخصيص حسب طبيعة المنشأة</li>
+            <li>تركيز على الوقاية والاستجابة السريعة</li>
+            <li>التزام بمعايير الجودة والانضباط</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="eyebrow">خدماتنا</div>
+
+          <h2>
+            حلول متكاملة للحماية والدعم
+          </h2>
+
+          <p>
+            خدمات مصممة لمساعدة منشأتك على العمل بأمان وكفاءة
+            واستمرارية.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service">
+            <div class="service-number">01 / SECURITY</div>
+            <div class="service-icon">◈</div>
+
+            <h3>الحراسات الأمنية</h3>
+
+            <p>
+              توفير خدمات الحراسة الأمنية للمواقع والمنشآت
+              وفق إجراءات تشغيلية واضحة وانضباط مهني.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-number">02 / PROTECTION</div>
+            <div class="service-icon">◆</div>
+
+            <h3>حماية المنشآت</h3>
+
+            <p>
+              حلول أمنية لحماية المنشآت والمرافق والأصول
+              وتقليل المخاطر التشغيلية.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-number">03 / ENGINEERING</div>
+            <div class="service-icon">◇</div>
+
+            <h3>الدعم الهندسي</h3>
+
+            <p>
+              خدمات هندسية وفنية مساندة لدعم المشاريع
+              والعمليات التشغيلية واحتياجات المواقع.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-number">04 / SITE SUPPORT</div>
+            <div class="service-icon">▣</div>
+
+            <h3>دعم المواقع</h3>
+
+            <p>
+              دعم متكامل للمواقع والمنشآت بما يعزز التنظيم
+              والجاهزية واستمرارية العمليات.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-number">05 / RISK</div>
+            <div class="service-icon">△</div>
+
+            <h3>إدارة المخاطر الأمنية</h3>
+
+            <p>
+              المساعدة في تحديد مصادر المخاطر وتطوير إجراءات
+              وقائية مناسبة لطبيعة الموقع.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-number">06 / CUSTOM</div>
+            <div class="service-icon">+</div>
+
+            <h3>حلول مخصصة</h3>
+
+            <p>
+              تصميم حلول أمنية وتشغيلية وفق احتياجات العميل
+              وطبيعة النشاط وحجم المنشأة.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why" class="why">
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="eyebrow">لماذا أبراج الماضونة؟</div>
+
+          <h2>
+            لأن الأمن يحتاج إلى أكثر من مجرد حضور
+          </h2>
+
+          <p>
+            نركز على بناء منظومة عمل تعتمد على الانضباط،
+            الجاهزية، المسؤولية والاحترافية.
+          </p>
+        </div>
+
+        <div class="why-grid">
+
+          <div class="why-card">
+            <strong>الاحترافية</strong>
+            <p>
+              إجراءات عمل منظمة وتركيز دائم على جودة الخدمة.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <strong>الجاهزية</strong>
+            <p>
+              الاستعداد للتعامل مع متطلبات المواقع والعمليات.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <strong>الموثوقية</strong>
+            <p>
+              شريك يعتمد عليه في حماية الأعمال والمنشآت.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <strong>المرونة</strong>
+            <p>
+              حلول قابلة للتكيف مع اختلاف طبيعة العملاء والمواقع.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTORS -->
+    <section id="sectors" class="sectors">
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="eyebrow">القطاعات</div>
+
+          <h2>
+            حلول لبيئات عمل مختلفة
+          </h2>
+
+          <p>
+            نفهم أن لكل قطاع متطلباته الأمنية والتشغيلية الخاصة.
+          </p>
+        </div>
+
+        <div class="sectors-grid">
+
+          <div class="sector">
+            <small>01</small>
+            <h3>الشركات والمؤسسات</h3>
+          </div>
+
+          <div class="sector">
+            <small>02</small>
+            <h3>المصانع والمنشآت الصناعية</h3>
+          </div>
+
+          <div class="sector">
+            <small>03</small>
+            <h3>المستودعات والمرافق اللوجستية</h3>
+          </div>
+
+          <div class="sector">
+            <small>04</small>
+            <h3>المشاريع والمواقع الإنشائية</h3>
+          </div>
+
+          <div class="sector">
+            <small>05</small>
+            <h3>المجمعات والمنشآت التجارية</h3>
+          </div>
+
+          <div class="sector">
+            <small>06</small>
+            <h3>المرافق والمواقع الخاصة</h3>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner">
+
+        <div>
+          <h2>هل تبحث عن شريك أمني موثوق؟</h2>
+
+          <p>
+            دعنا نفهم احتياجات منشأتك ونساعدك في بناء الحل
+            المناسب لطبيعة عملك.
+          </p>
+        </div>
+
+        <a href="#contact" class="btn btn-primary">
+          تواصل معنا الآن
+        </a>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="eyebrow">تواصل معنا</div>
+
+          <h2>
+            لنبدأ الحديث عن احتياجاتكم
+          </h2>
+
+          <p>
+            فريقنا جاهز للاستماع إلى متطلباتكم ومناقشة الحلول
+            المناسبة.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <small>الموقع</small>
+            <h3>سحاب، عمّان، الأردن</h3>
+            <p>
+              نخدم الشركات والمنشآت والمشاريع في الأردن.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <small>البريد الإلكتروني</small>
+            <h3>تواصل معنا</h3>
+            <p>
+              أضف بريد الشركة الرسمي هنا.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <small>الهاتف</small>
+            <h3>اتصل بنا</h3>
+            <p>
+              أضف رقم الهاتف الرسمي للشركة هنا.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <small>ساعات العمل</small>
+            <h3>خدمة العملاء</h3>
+            <p>
+              أضف ساعات العمل الرسمية للشركة هنا.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-grid">
+
+      <div>
+        <div class="brand">
+          <div class="brand-mark">
+            <span>أ</span>
+          </div>
+
+          <div class="brand-text">
+            <strong>أبراج الماضونة</strong>
+            <small>SECURITY & ENGINEERING</small>
+          </div>
+        </div>
+
+        <p style="margin-top:20px;max-width:450px;">
+          حلول أمنية وهندسية مساندة تساعد منشأتك على العمل
+          بأمان وكفاءة واستمرارية.
+        </p>
+      </div>
+
+      <div>
+        <h3>روابط سريعة</h3>
+
+        <ul>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#sectors">القطاعات</a></li>
+          <li><a href="#why">لماذا نحن</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>معلومات الاتصال</h3>
+
+        <ul>
+          <li>سحاب، عمّان، الأردن</li>
+          <li>البريد الإلكتروني: أضف البريد</li>
+          <li>الهاتف: أضف الرقم</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>
+        © 2026 شركة أبراج الماضونة. جميع الحقوق محفوظة.
+      </span>
+
+      <span>
+        Security • Engineering • Reliability
+      </span>
+    </div>
+
+  </footer>
+
 </body>
 </html>
