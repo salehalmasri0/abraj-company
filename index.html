@@ -1446,6 +1446,21 @@
       }
     }
   </style>
+
+<style id="employee-portal-nav-style">
+  .employee-portal-nav{
+    color:#fff !important;
+    background:linear-gradient(135deg,#1F9C82,#5FCBB2) !important;
+    font-weight:900 !important;
+    box-shadow:0 8px 24px rgba(31,156,130,.22);
+  }
+  .employee-portal-nav:hover{transform:translateY(-1px);}
+  .employee-portal-hero{box-shadow:0 14px 30px rgba(31,156,130,.18);}
+  @media(max-width:900px){
+    .employee-portal-nav{display:block !important;text-align:center;margin-top:6px;}
+  }
+</style>
+
 </head>
 
 <body>
@@ -1485,7 +1500,8 @@
       <a href="#clients">عملاؤنا</a>
       <a href="#contact">تواصل معنا</a>
 
-    </nav>
+    <a href="/employee-portal.html" class="employee-portal-nav" aria-label="بوابة الموظفين">بوابة الموظفين</a>
+      </nav>
 
     <div class="header-actions">
 
@@ -1539,6 +1555,7 @@
       </p>
 
       <div class="hero-buttons">
+        <a href="/employee-portal.html" class="btn btn-teal employee-portal-hero">بوابة الموظفين <span aria-hidden="true">↗</span></a>
 
         <a href="#contact" class="btn btn-gold">
           اطلب عرض سعر
