@@ -1,0 +1,12 @@
+.git
+.git/**
+.wrangler
+.wrangler/**
+.github
+.github/**
+employee-api
+employee-api/**
+src
+src/**
+*.md
+wrangler.jsonc
