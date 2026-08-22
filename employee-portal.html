@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بوابة الموظفين | أبراج الماضونة</title>
+<meta name="description" content="بوابة الموظفين الآمنة للاستعلام عن الملفات وتنزيل المستندات بعد التحقق.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root{font-family:Arial,sans-serif;color:#18202a;background:#f4f6f8}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px}.card{width:min(520px,100%);background:#fff;border-radius:18px;padding:32px;box-shadow:0 12px 40px #0001}h1{margin-top:0}.muted{color:#667085;line-height:1.7}label{display:block;margin:20px 0 8px;font-weight:700}input{width:100%;padding:14px;border:1px solid #d0d5dd;border-radius:10px;font-size:18px;letter-spacing:1px}button{width:100%;margin-top:18px;padding:14px;border:0;border-radius:10px;background:#18202a;color:#fff;font-size:17px;cursor:pointer}button:disabled{opacity:.5}.step{display:none}.step.active{display:block}.notice{margin-top:16px;padding:12px;border-radius:10px;background:#f8fafc}.error{color:#b42318}.success{color:#027a48}.download{display:block;text-align:center;text-decoration:none;background:#18202a;color:#fff;padding:14px;border-radius:10px;margin-top:18px}
+</style>
+</head>
+<body>
+<main class="card">
+<h1>بوابة الموظفين</h1>
+<p class="muted">أدخل الرقم الوطني المسجل لدى الشركة. سيتم لاحقًا إرسال رمز تحقق OTP إلى رقم الهاتف المسجل قبل إتاحة الملف.</p>
+<section id="step1" class="step active">
+<label for="nationalId">الرقم الوطني</label><input id="nationalId" inputmode="numeric" autocomplete="off" maxlength="20" placeholder="أدخل الرقم الوطني">
+<button id="requestBtn">متابعة وإرسال رمز التحقق</button>
+</section>
+<section id="step2" class="step">
+<label for="otp">رمز التحقق OTP</label><input id="otp" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6 أرقام">
+<button id="verifyBtn">تحقق</button><button type="button" id="backBtn">رجوع</button>
+</section>
+<section id="step3" class="step">
+<h2>تم التحقق</h2><p class="muted">سيظهر هنا ملف الموظف بعد ربط خدمة التحقق وقاعدة بيانات الملفات.</p>
+<a class="download" id="downloadBtn" href="#" hidden>تنزيل ملفي</a>
+</section>
+<div id="message" class="notice" hidden></div>
+</main>
+<script>
+const API_BASE=''; // لاحقًا: عنوان خدمة الـBackend
+const $=id=>document.getElementById(id), msg=(text,type='')=>{const e=$('message');e.hidden=false;e.className='notice '+type;e.textContent=text};
+function step(n){document.querySelectorAll('.step').forEach(x=>x.classList.remove('active'));$('step'+n).classList.add('active');$('message').hidden=true}
+$('requestBtn').onclick=async()=>{
+ const nationalId=$('nationalId').value.trim();
+ if(!/^\d{8,20}$/.test(nationalId))return msg('أدخل رقمًا وطنيًا صحيحًا.','error');
+ if(!API_BASE)return msg('واجهة النظام جاهزة. إرسال OTP الحقيقي سيتفعل فور ربط خدمة الـBackend وSMS. لم يتم وضع بيانات موظفين أو OTP تجريبي داخل الموقع.');
+};
+$('verifyBtn').onclick=async()=>{const otp=$('otp').value.trim();if(!/^\d{6}$/.test(otp))return msg('أدخل رمزًا من 6 أرقام.','error');if(!API_BASE)return msg('التحقق الحقيقي غير مفعل حتى ربط خدمة الـBackend.','error');};
+$('backBtn').onclick=()=>step(1);
+</script>
+</body></html>
