@@ -1,0 +1,27 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "abraj-company",
+  "main": "./src/index.js",
+  "compatibility_date": "2026-08-22",
+  "observability": { "enabled": true },
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"],
+    "not_found_handling": "404-page",
+    "exclude": [".git/**", ".wrangler/**", ".github/**", "employee-api/**", "src/**", "*.md"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "my-db-name",
+      "database_id": "ced75d3a-d7a6-42fd-8d06-ae8f1f219655"
+    }
+  ],
+  "secrets_store_secrets": [
+    { "binding": "TWILIO_ACCOUNT_SID", "store_id": "99e23538b9db4c8babacc31ddf4e7fc0", "secret_name": "TWILIO_ACCOUNT_SID" },
+    { "binding": "TWILIO_AUTH_TOKEN", "store_id": "99e23538b9db4c8babacc31ddf4e7fc0", "secret_name": "TWILIO_AUTH_TOKEN" },
+    { "binding": "TWILIO_VERIFY_SERVICE_SID", "store_id": "99e23538b9db4c8babacc31ddf4e7fc0", "secret_name": "TWILIO_VERIFY_SERVICE_SID" },
+    { "binding": "SESSION_SECRET", "store_id": "99e23538b9db4c8babacc31ddf4e7fc0", "secret_name": "SESSION_SECRET" }
+  ]
+}
