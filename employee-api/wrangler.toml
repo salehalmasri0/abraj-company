@@ -5,12 +5,12 @@ compatibility_date = "2026-08-22"
 [[d1_databases]]
 binding = "DB"
 database_name = "abraj-employees"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "ced75d3a-d7a6-42fd-8d06-ae8f1f219655"
 
 [vars]
 CORS_ORIGIN = "https://horses2002.com"
 
-# Set secrets with `wrangler secret put`:
+# Secrets are configured in Cloudflare, never committed to Git:
 # SESSION_SECRET
 # TWILIO_ACCOUNT_SID
 # TWILIO_AUTH_TOKEN
