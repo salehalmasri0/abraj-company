@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# Primary sitemap for Google and other search engines
 Sitemap: https://horses2002.com/sitemap.xml
