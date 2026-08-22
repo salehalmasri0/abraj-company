@@ -1,11 +1,16 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="theme-color" content="#071427">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <meta name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
   <title>أبراج | خدمات أمنية وخدمات مساندة في الأردن منذ 2002</title>
 
@@ -17,49 +22,89 @@
 
   <meta name="author" content="Abraj Company">
 
+
+  <!-- ================= OPEN GRAPH ================= -->
+
   <meta property="og:type" content="website">
+
   <meta property="og:locale" content="ar_JO">
-  <meta property="og:title" content="أبراج | الأمن والخدمات المساندة">
+
+  <meta property="og:title"
+        content="أبراج | الأمن والخدمات المساندة">
+
   <meta property="og:description"
         content="حلول أمنية وخدمات مساندة متكاملة للمنشآت الصناعية والتجارية في الأردن منذ 2002.">
+
   <meta property="og:site_name" content="Abraj Company">
-  <meta property="og:url" content="https://horses2002.com/">
+
+  <meta property="og:url"
+        content="https://horses2002.com/">
+
+
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="أبراج | الأمن والخدمات المساندة في الأردن">
-  <meta name="twitter:description" content="حلول أمنية وخدمات مساندة متكاملة للمنشآت الصناعية والتجارية في الأردن منذ 2002.">
 
-  <link rel="canonical" href="https://horses2002.com/">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="twitter:title"
+        content="أبراج | الأمن والخدمات المساندة في الأردن">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="twitter:description"
+        content="حلول أمنية وخدمات مساندة متكاملة للمنشآت الصناعية والتجارية في الأردن.">
+
+
+  <link rel="canonical"
+        href="https://horses2002.com/">
+
+  <link rel="icon"
+        href="/favicon.svg"
+        type="image/svg+xml">
+
+
+  <!-- ================= FONTS ================= -->
+
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Manrope:wght@600;700;800&display=swap"
         rel="stylesheet">
 
-  <!-- Structured Data -->
+
+  <!-- ================= STRUCTURED DATA ================= -->
+
   <script type="application/ld+json">
+
   {
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
     "@id":"https://horses2002.com/#organization",
+
     "name":"Abraj Company",
     "alternateName":"أبراج",
+
     "url":"https://horses2002.com/",
+
     "description":"شركة أردنية متخصصة في الحراسات الأمنية والخدمات المساندة.",
+
     "foundingDate":"2002",
+
     "telephone":"+962790234710",
+
     "email":"abrajcompany.jo@gmail.com",
+
     "address":{
       "@type":"PostalAddress",
       "addressLocality":"Sahab",
       "addressRegion":"Amman",
       "addressCountry":"JO"
     },
+
     "areaServed":{
       "@type":"Country",
       "name":"Jordan"
     },
+
     "serviceType":[
       "Security Services",
       "Guarding Services",
@@ -69,10 +114,16 @@
       "Maintenance Services"
     ]
   }
+
   </script>
 
+
+  <!-- ================= CSS ================= -->
+
   <style>
+
     :root{
+
       --navy:#071427;
       --navy-2:#0C2340;
       --navy-3:#12315B;
@@ -94,1420 +145,2773 @@
       --line-dark:rgba(255,255,255,.12);
 
       --radius:18px;
-      --shadow:0 20px 50px -25px rgba(7,20,39,.35);
+
+      --shadow:
+        0 20px 50px -25px rgba(7,20,39,.35);
+
       --max:1180px;
     }
+
 
     *{
       box-sizing:border-box;
     }
 
+
     html{
+
       scroll-behavior:smooth;
+
       scroll-padding-top:90px;
+
     }
 
+
     body{
+
       margin:0;
+
       font-family:"Tajawal",sans-serif;
+
       background:var(--cream);
+
       color:var(--ink);
+
       line-height:1.7;
+
       -webkit-font-smoothing:antialiased;
+
       overflow-x:hidden;
+
     }
+
 
     body.menu-open{
       overflow:hidden;
     }
 
-    h1,h2,h3,h4{
+
+    h1,
+    h2,
+    h3,
+    h4{
+
       font-family:"Tajawal",sans-serif;
+
       line-height:1.35;
+
     }
 
+
     a{
+
       color:inherit;
+
       text-decoration:none;
+
     }
+
 
     button,
     input,
     select,
     textarea{
+
       font:inherit;
+
     }
+
 
     img{
+
       max-width:100%;
+
       display:block;
+
     }
+
 
     .container{
-      width:min(var(--max),calc(100% - 40px));
+
+      width:min(
+        var(--max),
+        calc(100% - 40px)
+      );
+
       margin:auto;
+
     }
+
 
     .section{
+
       padding:110px 0;
+
     }
+
 
     .section-head{
+
       max-width:720px;
+
       margin-bottom:52px;
+
     }
+
 
     .eyebrow{
+
       display:inline-flex;
+
       align-items:center;
+
       gap:9px;
+
       color:var(--gold-light);
+
       font-size:12px;
+
       font-family:"Manrope",sans-serif;
+
       font-weight:700;
+
       letter-spacing:2px;
+
       text-transform:uppercase;
+
       margin-bottom:18px;
+
     }
+
 
     .eyebrow::before{
+
       content:"";
+
       width:25px;
+
       height:2px;
+
       background:var(--gold);
+
     }
+
 
     .section-head h2{
+
       margin:0 0 14px;
+
       font-size:clamp(28px,4vw,42px);
+
       font-weight:900;
+
       color:var(--navy);
+
     }
 
+
     .section-head p{
+
       margin:0;
+
       color:var(--muted);
+
       font-size:16px;
+
       line-height:1.9;
+
     }
+
 
     /* ================= HEADER ================= */
 
     .header{
+
       position:fixed;
+
       top:0;
+
       right:0;
+
       left:0;
+
       z-index:1000;
+
       padding:17px 0;
+
       transition:.3s ease;
+
     }
+
 
     .header.scrolled{
+
       background:rgba(7,20,39,.94);
+
       backdrop-filter:blur(14px);
+
       padding:11px 0;
+
       box-shadow:0 10px 35px rgba(0,0,0,.18);
+
     }
+
 
     .header-inner{
+
       display:flex;
+
       align-items:center;
+
       justify-content:space-between;
+
       gap:20px;
+
     }
+
 
     .logo{
+
       display:flex;
+
       align-items:center;
+
       gap:11px;
+
       color:white;
+
       flex-shrink:0;
+
     }
+
 
     .logo-mark{
+
       width:43px;
+
       height:43px;
+
       border-radius:12px;
+
       overflow:hidden;
+
     }
+
 
     .logo-text{
+
       display:flex;
+
       flex-direction:column;
+
       line-height:1.1;
+
     }
+
 
     .logo-text strong{
+
       font-size:20px;
+
       font-weight:900;
+
     }
+
 
     .logo-text small{
+
       margin-top:4px;
+
       color:var(--gold-light);
+
       font-family:"Manrope",sans-serif;
+
       font-size:8.5px;
+
       letter-spacing:2px;
+
     }
+
 
     .nav{
+
       display:flex;
+
       align-items:center;
+
       gap:3px;
+
     }
+
 
     .nav a{
+
       color:rgba(255,255,255,.82);
+
       padding:9px 12px;
+
       border-radius:100px;
+
       font-size:14px;
+
       transition:.2s;
+
     }
+
 
     .nav a:hover{
+
       color:white;
+
       background:rgba(255,255,255,.09);
+
     }
+
+
+    /* ================= EMPLOYEE PORTAL ================= */
+
+    .employee-portal-nav{
+
+      color:#fff !important;
+
+      background:
+        linear-gradient(
+          135deg,
+          #1F9C82,
+          #5FCBB2
+        ) !important;
+
+      font-weight:900 !important;
+
+      box-shadow:
+        0 8px 24px
+        rgba(31,156,130,.22);
+
+    }
+
+
+    .employee-portal-nav:hover{
+
+      transform:translateY(-1px);
+
+      background:
+        linear-gradient(
+          135deg,
+          #5FCBB2,
+          #1F9C82
+        ) !important;
+
+    }
+
+
+    .employee-portal-hero{
+
+      box-shadow:
+        0 14px 30px
+        rgba(31,156,130,.18);
+
+    }
+
 
     .header-actions{
+
       display:flex;
+
       align-items:center;
+
       gap:9px;
+
     }
+
 
     .btn{
+
       display:inline-flex;
+
       align-items:center;
+
       justify-content:center;
+
       gap:8px;
+
       min-height:46px;
+
       padding:11px 21px;
+
       border-radius:100px;
+
       border:1px solid transparent;
+
       font-weight:800;
+
       font-size:14px;
+
       cursor:pointer;
+
       transition:.25s ease;
+
       white-space:nowrap;
+
     }
+
 
     .btn:hover{
+
       transform:translateY(-2px);
+
     }
+
 
     .btn-gold{
+
       color:#211802;
-      background:linear-gradient(135deg,var(--gold-light),var(--gold));
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--gold-light),
+          var(--gold)
+        );
+
     }
+
 
     .btn-teal{
+
       color:#032a23;
-      background:linear-gradient(135deg,var(--teal-light),var(--teal));
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--teal-light),
+          var(--teal)
+        );
+
     }
+
 
     .btn-outline{
+
       color:white;
-      border-color:rgba(255,255,255,.28);
+
+      border-color:
+        rgba(255,255,255,.28);
+
       background:transparent;
+
     }
+
 
     .btn-outline:hover{
-      background:rgba(255,255,255,.08);
+
+      background:
+        rgba(255,255,255,.08);
+
     }
 
+
     .menu-btn{
+
       display:none;
+
       width:44px;
+
       height:44px;
-      border:1px solid rgba(255,255,255,.18);
+
+      border:
+        1px solid
+        rgba(255,255,255,.18);
+
       border-radius:12px;
+
       background:transparent;
+
       color:white;
+
       cursor:pointer;
+
       font-size:24px;
+
     }
+
 
     /* ================= HERO ================= */
 
     .hero{
+
       min-height:760px;
+
       padding:170px 0 95px;
+
       color:white;
+
       background:
-        radial-gradient(850px 500px at 85% 5%,rgba(31,156,130,.15),transparent 65%),
-        radial-gradient(850px 500px at 5% 0%,rgba(200,155,60,.12),transparent 65%),
-        linear-gradient(145deg,#071427,#0C2340 55%,#071427);
+
+        radial-gradient(
+          850px 500px at 85% 5%,
+          rgba(31,156,130,.15),
+          transparent 65%
+        ),
+
+        radial-gradient(
+          850px 500px at 5% 0%,
+          rgba(200,155,60,.12),
+          transparent 65%
+        ),
+
+        linear-gradient(
+          145deg,
+          #071427,
+          #0C2340 55%,
+          #071427
+        );
+
       position:relative;
+
       overflow:hidden;
+
     }
+
 
     .hero::after{
+
       content:"";
+
       position:absolute;
+
       width:500px;
+
       height:500px;
-      border:1px solid rgba(255,255,255,.04);
+
+      border:
+        1px solid
+        rgba(255,255,255,.04);
+
       border-radius:50%;
+
       left:-250px;
+
       bottom:-300px;
+
     }
+
 
     .hero-grid{
+
       display:grid;
-      grid-template-columns:1.05fr .95fr;
+
+      grid-template-columns:
+        1.05fr .95fr;
+
       align-items:center;
+
       gap:70px;
+
       position:relative;
+
       z-index:1;
+
     }
+
 
     .hero h1{
+
       margin:0 0 22px;
-      font-size:clamp(36px,5vw,62px);
+
+      font-size:
+        clamp(36px,5vw,62px);
+
       font-weight:900;
+
       letter-spacing:-1px;
+
     }
+
 
     .hero h1 span{
+
       color:var(--gold-light);
+
     }
+
 
     .hero h1 em{
+
       color:var(--teal-light);
+
       font-style:normal;
+
     }
+
 
     .hero-description{
+
       max-width:620px;
+
       margin:0 0 30px;
-      color:rgba(255,255,255,.72);
+
+      color:
+        rgba(255,255,255,.72);
+
       font-size:17px;
+
       line-height:2;
+
     }
+
 
     .hero-buttons{
+
       display:flex;
+
       flex-wrap:wrap;
+
       gap:12px;
+
       margin-bottom:38px;
+
     }
+
 
     .hero-contact{
+
       display:flex;
+
       align-items:center;
+
       gap:14px;
+
       margin-top:18px;
+
     }
+
 
     .hero-contact-icon{
+
       width:42px;
+
       height:42px;
+
       border-radius:50%;
-      background:rgba(255,255,255,.08);
+
+      background:
+        rgba(255,255,255,.08);
+
       display:grid;
+
       place-items:center;
+
       color:var(--gold-light);
+
     }
+
 
     .hero-contact small{
+
       display:block;
-      color:rgba(255,255,255,.5);
+
+      color:
+        rgba(255,255,255,.5);
+
       font-size:11px;
+
     }
+
 
     .hero-contact strong{
+
       font-family:"Manrope",sans-serif;
+
       direction:ltr;
+
       display:block;
+
       color:white;
+
     }
+
 
     .hero-visual{
+
       min-height:500px;
+
       position:relative;
+
       display:grid;
+
       place-items:center;
+
     }
+
 
     .visual-card{
+
       width:min(440px,100%);
+
       aspect-ratio:4/5;
-      border:1px solid rgba(255,255,255,.14);
+
+      border:
+        1px solid
+        rgba(255,255,255,.14);
+
       border-radius:28px;
+
       background:
-        linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.025));
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.1),
+          rgba(255,255,255,.025)
+        );
+
       backdrop-filter:blur(12px);
-      box-shadow:0 40px 80px rgba(0,0,0,.3);
+
+      box-shadow:
+        0 40px 80px
+        rgba(0,0,0,.3);
+
       position:relative;
+
       overflow:hidden;
+
     }
+
 
     .visual-card::before{
+
       content:"";
+
       position:absolute;
+
       width:270px;
+
       height:270px;
+
       border-radius:50%;
-      background:rgba(200,155,60,.12);
+
+      background:
+        rgba(200,155,60,.12);
+
       top:-100px;
+
       right:-80px;
+
     }
+
 
     .visual-building{
+
       position:absolute;
+
       bottom:0;
+
       right:15%;
+
       width:34%;
+
       height:72%;
-      background:linear-gradient(180deg,var(--gold-light),#765817);
-      border-radius:6px 6px 0 0;
+
+      background:
+        linear-gradient(
+          180deg,
+          var(--gold-light),
+          #765817
+        );
+
+      border-radius:
+        6px 6px 0 0;
+
     }
+
 
     .visual-building.two{
+
       right:52%;
+
       width:27%;
+
       height:50%;
-      background:linear-gradient(180deg,var(--teal-light),#0a594a);
+
+      background:
+        linear-gradient(
+          180deg,
+          var(--teal-light),
+          #0a594a
+        );
+
     }
+
 
     .windows{
+
       position:absolute;
+
       inset:25px 18px 20px;
-      background:repeating-linear-gradient(
-        to bottom,
-        rgba(7,20,39,.6) 0 10px,
-        transparent 10px 25px
-      );
+
+      background:
+        repeating-linear-gradient(
+          to bottom,
+          rgba(7,20,39,.6) 0 10px,
+          transparent 10px 25px
+        );
+
     }
+
 
     .visual-label{
+
       position:absolute;
+
       padding:12px 15px;
-      border:1px solid rgba(255,255,255,.15);
-      background:rgba(7,20,39,.65);
+
+      border:
+        1px solid
+        rgba(255,255,255,.15);
+
+      background:
+        rgba(7,20,39,.65);
+
       backdrop-filter:blur(12px);
+
       border-radius:14px;
+
       font-size:12px;
+
       font-weight:700;
+
     }
+
 
     .label-one{
+
       top:12%;
+
       right:-15px;
+
     }
+
 
     .label-two{
+
       bottom:13%;
+
       left:-20px;
+
     }
+
 
     .label-dot{
+
       width:8px;
+
       height:8px;
+
       border-radius:50%;
+
       display:inline-block;
+
       margin-left:7px;
+
       background:var(--gold);
+
     }
+
 
     .label-two .label-dot{
+
       background:var(--teal-light);
+
     }
 
-    /* ================= TRUST BAR ================= */
+
+    /* ================= TRUST ================= */
 
     .trust{
+
       background:white;
-      border-bottom:1px solid var(--line);
+
+      border-bottom:
+        1px solid var(--line);
+
     }
+
 
     .trust-grid{
+
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+
+      grid-template-columns:
+        repeat(4,1fr);
+
     }
+
 
     .trust-item{
+
       padding:28px 20px;
+
       text-align:center;
-      border-left:1px solid var(--line);
+
+      border-left:
+        1px solid var(--line);
+
     }
+
 
     .trust-item:last-child{
+
       border-left:0;
+
     }
+
 
     .trust-item strong{
+
       display:block;
+
       font-family:"Manrope",sans-serif;
+
       color:var(--navy);
+
       font-size:25px;
+
     }
 
+
     .trust-item span{
+
       color:var(--muted);
+
       font-size:12px;
+
     }
+
 
     /* ================= ABOUT ================= */
 
     .about{
+
       background:var(--cream);
+
     }
+
 
     .about-grid{
+
       display:grid;
+
       grid-template-columns:1fr 1fr;
+
       gap:70px;
+
       align-items:center;
+
     }
+
 
     .about-copy h3{
+
       margin:0 0 10px;
+
       font-size:20px;
+
       color:var(--navy);
+
     }
+
 
     .about-copy p{
+
       color:var(--muted);
+
       line-height:2;
+
       margin:0 0 22px;
+
     }
+
 
     .quote{
-      border-right:3px solid var(--gold);
+
+      border-right:
+        3px solid var(--gold);
+
       background:white;
+
       padding:20px 22px;
-      border-radius:0 14px 14px 0;
+
+      border-radius:
+        0 14px 14px 0;
+
       font-weight:800;
+
       color:var(--navy);
+
       box-shadow:var(--shadow);
+
     }
+
 
     .stats{
+
       display:grid;
+
       grid-template-columns:1fr 1fr;
+
       gap:16px;
+
     }
+
 
     .stat-card{
+
       background:white;
-      border:1px solid var(--line);
+
+      border:
+        1px solid var(--line);
+
       border-radius:18px;
+
       padding:28px 23px;
+
       box-shadow:var(--shadow);
+
     }
 
+
     .stat-card strong{
+
       font-family:"Manrope",sans-serif;
+
       color:var(--navy);
+
       font-size:34px;
+
       display:block;
+
     }
+
 
     .stat-card:nth-child(2) strong,
     .stat-card:nth-child(3) strong{
+
       color:var(--teal);
+
     }
 
+
     .stat-card span{
+
       color:var(--muted);
+
       font-size:13px;
+
     }
+
 
     /* ================= SERVICES ================= */
 
     .services{
+
       background:var(--navy);
+
       color:white;
+
     }
+
 
     .services .section-head h2{
+
       color:white;
+
     }
+
 
     .services .section-head p{
-      color:rgba(255,255,255,.6);
+
+      color:
+        rgba(255,255,255,.6);
+
     }
+
 
     .service-tabs{
+
       display:grid;
+
       grid-template-columns:1fr 1fr;
+
       gap:15px;
+
       margin-bottom:30px;
+
     }
+
 
     .service-tab{
+
       text-align:right;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.04);
+
+      border:
+        1px solid
+        rgba(255,255,255,.12);
+
+      background:
+        rgba(255,255,255,.04);
+
       color:white;
+
       border-radius:17px;
+
       padding:20px;
+
       cursor:pointer;
+
       transition:.25s;
+
     }
+
 
     .service-tab.active{
-      background:rgba(255,255,255,.08);
-      border-color:rgba(228,197,120,.55);
+
+      background:
+        rgba(255,255,255,.08);
+
+      border-color:
+        rgba(228,197,120,.55);
+
     }
+
 
     .service-tab strong{
+
       display:block;
+
       margin-bottom:4px;
+
       font-size:17px;
+
     }
+
 
     .service-tab span{
-      color:rgba(255,255,255,.55);
+
+      color:
+        rgba(255,255,255,.55);
+
       font-size:12px;
+
     }
+
 
     .service-panel{
+
       display:none;
+
     }
+
 
     .service-panel.active{
+
       display:block;
-      animation:fadeUp .4s ease;
+
+      animation:
+        fadeUp .4s ease;
+
     }
+
 
     .services-grid{
+
       display:grid;
-      grid-template-columns:repeat(3,1fr);
+
+      grid-template-columns:
+        repeat(3,1fr);
+
       gap:16px;
+
     }
+
 
     .service-card{
+
       padding:25px;
+
       border-radius:17px;
-      background:rgba(255,255,255,.045);
-      border:1px solid rgba(255,255,255,.1);
+
+      background:
+        rgba(255,255,255,.045);
+
+      border:
+        1px solid
+        rgba(255,255,255,.1);
+
       transition:.25s;
+
     }
+
 
     .service-card:hover{
+
       transform:translateY(-4px);
-      background:rgba(255,255,255,.075);
+
+      background:
+        rgba(255,255,255,.075);
+
     }
+
 
     .service-icon{
+
       width:42px;
+
       height:42px;
+
       border-radius:12px;
+
       display:grid;
+
       place-items:center;
+
       color:var(--gold-light);
-      background:rgba(200,155,60,.13);
+
+      background:
+        rgba(200,155,60,.13);
+
       margin-bottom:17px;
+
     }
+
 
     .service-card h3{
+
       margin:0 0 8px;
+
       font-size:16px;
+
     }
 
+
     .service-card p{
+
       margin:0;
-      color:rgba(255,255,255,.58);
+
+      color:
+        rgba(255,255,255,.58);
+
       font-size:13.5px;
+
       line-height:1.9;
+
     }
+
 
     /* ================= SECTORS ================= */
 
     .sectors{
+
       background:var(--cream-2);
+
     }
+
 
     .sector-grid{
+
       display:grid;
-      grid-template-columns:repeat(3,1fr);
+
+      grid-template-columns:
+        repeat(3,1fr);
+
       gap:17px;
+
     }
+
 
     .sector{
+
       min-height:150px;
+
       background:white;
-      border:1px solid var(--line);
+
+      border:
+        1px solid var(--line);
+
       border-radius:18px;
+
       padding:25px;
+
       box-shadow:var(--shadow);
+
       position:relative;
+
       overflow:hidden;
+
     }
+
 
     .sector::after{
+
       content:"";
+
       position:absolute;
+
       width:90px;
+
       height:90px;
+
       border-radius:50%;
-      background:rgba(31,156,130,.08);
+
+      background:
+        rgba(31,156,130,.08);
+
       left:-30px;
+
       bottom:-40px;
+
     }
+
 
     .sector strong{
+
       display:block;
+
       color:var(--navy);
+
       font-size:17px;
+
       margin-bottom:7px;
+
     }
 
+
     .sector span{
+
       color:var(--muted);
+
       font-size:13px;
+
     }
+
 
     /* ================= HOW ================= */
 
     .how{
+
       background:white;
+
     }
+
 
     .how-grid{
+
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+
+      grid-template-columns:
+        repeat(4,1fr);
+
       gap:18px;
+
     }
+
 
     .how-card{
-      border:1px solid var(--line);
+
+      border:
+        1px solid var(--line);
+
       border-radius:18px;
+
       padding:27px 23px;
+
       position:relative;
+
       background:var(--cream);
+
     }
+
 
     .how-number{
+
       width:38px;
+
       height:38px;
+
       display:grid;
+
       place-items:center;
+
       border-radius:11px;
+
       color:white;
+
       background:var(--navy);
+
       font-family:"Manrope",sans-serif;
+
       font-size:12px;
+
       margin-bottom:20px;
+
     }
+
 
     .how-card h3{
+
       font-size:16px;
+
       margin:0 0 8px;
+
     }
 
+
     .how-card p{
+
       margin:0;
+
       color:var(--muted);
+
       font-size:13px;
+
       line-height:1.9;
+
     }
+
 
     /* ================= WHY ================= */
 
     .why{
+
       background:var(--navy-2);
+
       color:white;
+
     }
+
 
     .why .section-head h2{
+
       color:white;
+
     }
+
 
     .why .section-head p{
-      color:rgba(255,255,255,.6);
+
+      color:
+        rgba(255,255,255,.6);
+
     }
+
 
     .why-grid{
+
       display:grid;
-      grid-template-columns:repeat(3,1fr);
+
+      grid-template-columns:
+        repeat(3,1fr);
+
       gap:16px;
+
     }
+
 
     .why-card{
+
       padding:25px;
+
       border-radius:17px;
-      border:1px solid rgba(255,255,255,.1);
-      background:rgba(255,255,255,.045);
+
+      border:
+        1px solid
+        rgba(255,255,255,.1);
+
+      background:
+        rgba(255,255,255,.045);
+
     }
+
 
     .why-card strong{
+
       display:block;
+
       font-size:16px;
+
       margin-bottom:7px;
+
     }
+
 
     .why-card p{
-      color:rgba(255,255,255,.58);
+
+      color:
+        rgba(255,255,255,.58);
+
       font-size:13px;
+
       line-height:1.9;
+
       margin:0;
+
     }
 
+
     .check{
+
       color:var(--gold-light);
+
       font-size:22px;
+
       margin-bottom:13px;
+
     }
+
 
     /* ================= CLIENTS ================= */
 
     .clients{
+
       background:var(--cream);
+
     }
+
 
     .client-highlight{
+
       display:flex;
+
       justify-content:space-between;
+
       align-items:center;
+
       gap:20px;
+
       padding:30px 34px;
+
       margin-bottom:24px;
+
       border-radius:20px;
+
       color:white;
-      background:linear-gradient(120deg,var(--navy),var(--navy-3));
+
+      background:
+        linear-gradient(
+          120deg,
+          var(--navy),
+          var(--navy-3)
+        );
+
       box-shadow:var(--shadow);
+
     }
+
 
     .client-highlight strong{
+
       display:block;
+
       font-size:20px;
+
     }
+
 
     .client-highlight span{
-      color:rgba(255,255,255,.6);
+
+      color:
+        rgba(255,255,255,.6);
+
       font-size:13px;
+
     }
+
 
     .client-years{
+
       font-family:"Manrope",sans-serif;
+
       color:var(--gold-light);
+
       font-size:39px;
+
       font-weight:800;
+
     }
+
 
     .client-grid{
+
       display:grid;
-      grid-template-columns:repeat(3,1fr);
+
+      grid-template-columns:
+        repeat(3,1fr);
+
       gap:14px;
+
     }
+
 
     .client-card{
+
       background:white;
-      border:1px solid var(--line);
+
+      border:
+        1px solid var(--line);
+
       border-radius:15px;
+
       padding:20px;
+
     }
+
 
     .client-card strong{
+
       display:block;
+
       color:var(--navy);
+
       margin-bottom:5px;
+
       font-size:14px;
+
     }
+
 
     .client-card span{
+
       color:var(--muted);
+
       font-size:12px;
+
     }
 
+
     .status{
+
       display:inline-flex;
+
       margin-top:12px;
+
       padding:4px 10px;
+
       border-radius:50px;
-      background:rgba(31,156,130,.1);
+
+      background:
+        rgba(31,156,130,.1);
+
       color:var(--teal);
+
       font-size:11px;
+
       font-weight:800;
+
     }
+
 
     /* ================= CTA ================= */
 
     .cta{
-      background:linear-gradient(120deg,var(--gold),var(--gold-light));
+
+      background:
+        linear-gradient(
+          120deg,
+          var(--gold),
+          var(--gold-light)
+        );
+
       color:#211802;
+
       padding:75px 0;
+
     }
+
 
     .cta-inner{
+
       display:flex;
+
       align-items:center;
+
       justify-content:space-between;
+
       gap:35px;
+
     }
+
 
     .cta h2{
+
       margin:0 0 7px;
-      font-size:clamp(25px,4vw,37px);
+
+      font-size:
+        clamp(25px,4vw,37px);
+
       font-weight:900;
+
     }
+
 
     .cta p{
+
       margin:0;
+
       max-width:650px;
+
       font-size:15px;
+
     }
 
+
     .cta .btn{
+
       background:var(--navy);
+
       color:white;
+
       min-width:180px;
+
     }
+
 
     /* ================= CONTACT ================= */
 
     .contact{
+
       background:var(--navy);
+
       color:white;
+
     }
+
 
     .contact-grid{
+
       display:grid;
+
       grid-template-columns:.85fr 1.15fr;
+
       gap:55px;
+
     }
+
 
     .contact h2{
-      font-size:clamp(28px,4vw,40px);
+
+      font-size:
+        clamp(28px,4vw,40px);
+
       margin:0 0 14px;
+
     }
+
 
     .contact-intro{
-      color:rgba(255,255,255,.6);
+
+      color:
+        rgba(255,255,255,.6);
+
       line-height:2;
+
       margin:0;
+
     }
+
 
     .contact-list{
+
       display:grid;
+
       gap:13px;
+
       margin-top:30px;
+
     }
+
 
     .contact-item{
+
       display:flex;
+
       align-items:center;
+
       gap:14px;
+
       padding:15px;
-      border:1px solid rgba(255,255,255,.1);
+
+      border:
+        1px solid
+        rgba(255,255,255,.1);
+
       border-radius:14px;
-      background:rgba(255,255,255,.04);
+
+      background:
+        rgba(255,255,255,.04);
+
     }
+
 
     .contact-icon{
+
       width:42px;
+
       height:42px;
+
       border-radius:11px;
+
       display:grid;
+
       place-items:center;
-      background:rgba(200,155,60,.14);
+
+      background:
+        rgba(200,155,60,.14);
+
       color:var(--gold-light);
+
       flex-shrink:0;
+
     }
+
 
     .contact-item strong{
+
       display:block;
+
       font-size:14px;
+
     }
+
 
     .contact-item span{
-      color:rgba(255,255,255,.5);
+
+      color:
+        rgba(255,255,255,.5);
+
       font-size:12px;
+
     }
+
 
     .contact-item a:hover{
+
       color:var(--gold-light);
+
     }
+
 
     .form{
+
       padding:30px;
+
       border-radius:20px;
-      background:rgba(255,255,255,.045);
-      border:1px solid rgba(255,255,255,.12);
+
+      background:
+        rgba(255,255,255,.045);
+
+      border:
+        1px solid
+        rgba(255,255,255,.12);
+
     }
+
 
     .form-row{
+
       display:grid;
+
       grid-template-columns:1fr 1fr;
+
       gap:14px;
+
       margin-bottom:14px;
+
     }
+
 
     .field{
+
       display:flex;
+
       flex-direction:column;
+
       gap:7px;
+
     }
+
 
     .field.full{
+
       grid-column:1/-1;
+
     }
 
+
     .field label{
-      color:rgba(255,255,255,.6);
+
+      color:
+        rgba(255,255,255,.6);
+
       font-size:12px;
+
     }
+
 
     .field input,
     .field select,
     .field textarea{
+
       width:100%;
-      border:1px solid rgba(255,255,255,.13);
-      background:rgba(255,255,255,.06);
+
+      border:
+        1px solid
+        rgba(255,255,255,.13);
+
+      background:
+        rgba(255,255,255,.06);
+
       color:white;
+
       border-radius:10px;
+
       padding:12px 13px;
+
       outline:none;
+
     }
+
 
     .field input:focus,
     .field select:focus,
     .field textarea:focus{
+
       border-color:var(--gold);
+
     }
+
 
     .field select option{
+
       color:#111;
+
     }
+
 
     .field textarea{
+
       min-height:120px;
+
       resize:vertical;
+
     }
+
 
     .form .btn{
+
       width:100%;
+
       margin-top:5px;
+
     }
 
+
     .form-note{
+
       margin:12px 0 0;
+
       text-align:center;
-      color:rgba(255,255,255,.4);
+
+      color:
+        rgba(255,255,255,.4);
+
       font-size:11px;
+
     }
+
 
     /* ================= FOOTER ================= */
 
     footer{
+
       background:#050F1E;
-      color:rgba(255,255,255,.55);
+
+      color:
+        rgba(255,255,255,.55);
+
       padding:55px 0 25px;
+
     }
+
 
     .footer-grid{
+
       display:grid;
-      grid-template-columns:1.4fr 1fr 1fr;
+
+      grid-template-columns:
+        1.4fr 1fr 1fr;
+
       gap:45px;
+
       padding-bottom:40px;
+
     }
+
 
     footer .logo{
+
       margin-bottom:15px;
+
     }
+
 
     footer p{
+
       max-width:390px;
+
       font-size:13px;
+
       line-height:2;
+
       margin:0;
+
     }
+
 
     footer h3{
+
       color:white;
+
       font-size:14px;
+
       margin:0 0 15px;
+
     }
+
 
     footer ul{
+
       list-style:none;
+
       margin:0;
+
       padding:0;
+
     }
+
 
     footer li{
+
       margin-bottom:9px;
+
       font-size:13px;
+
     }
+
 
     footer a:hover{
+
       color:var(--gold-light);
+
     }
 
+
     .copyright{
-      border-top:1px solid rgba(255,255,255,.08);
+
+      border-top:
+        1px solid
+        rgba(255,255,255,.08);
+
       padding-top:20px;
+
       display:flex;
+
       justify-content:space-between;
+
       gap:15px;
+
       flex-wrap:wrap;
+
       font-size:11px;
+
     }
+
 
     /* ================= FLOATING ACTIONS ================= */
 
     .floating-actions{
+
       position:fixed;
+
       left:22px;
+
       bottom:22px;
+
       z-index:900;
+
       display:flex;
+
       flex-direction:column;
+
       gap:9px;
+
     }
+
 
     .float-btn{
+
       width:48px;
+
       height:48px;
+
       border-radius:50%;
+
       display:grid;
+
       place-items:center;
+
       color:white;
-      box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+      box-shadow:
+        0 12px 30px
+        rgba(0,0,0,.25);
+
       transition:.2s;
+
     }
+
 
     .float-btn:hover{
+
       transform:translateY(-3px);
+
     }
+
 
     .whatsapp{
+
       background:#25D366;
+
     }
+
 
     .phone{
+
       background:var(--navy);
-      border:1px solid rgba(255,255,255,.15);
+
+      border:
+        1px solid
+        rgba(255,255,255,.15);
+
     }
+
 
     .top-btn{
+
       opacity:0;
+
       pointer-events:none;
+
       background:var(--navy-2);
-      border:1px solid rgba(255,255,255,.15);
+
+      border:
+        1px solid
+        rgba(255,255,255,.15);
+
     }
 
+
     .top-btn.show{
+
       opacity:1;
+
       pointer-events:auto;
+
     }
+
 
     /* ================= ANIMATION ================= */
 
     .reveal{
+
       opacity:0;
+
       transform:translateY(22px);
-      transition:opacity .7s ease,transform .7s ease;
+
+      transition:
+        opacity .7s ease,
+        transform .7s ease;
+
     }
+
 
     .reveal.visible{
+
       opacity:1;
+
       transform:none;
+
     }
+
 
     @keyframes fadeUp{
+
       from{
+
         opacity:0;
+
         transform:translateY(10px);
+
       }
+
       to{
+
         opacity:1;
+
         transform:none;
+
       }
+
     }
 
+
     @media(prefers-reduced-motion:reduce){
+
       html{
+
         scroll-behavior:auto;
+
       }
+
 
       *,
       *::before,
       *::after{
+
         animation-duration:.001ms!important;
+
         transition-duration:.001ms!important;
+
       }
 
+
       .reveal{
+
         opacity:1;
+
         transform:none;
+
       }
+
     }
+
 
     /* ================= RESPONSIVE ================= */
 
     @media(max-width:1050px){
 
       .nav{
+
         position:fixed;
+
         top:0;
+
         right:0;
+
         width:100%;
+
         height:100vh;
-        background:rgba(7,20,39,.98);
+
+        background:
+          rgba(7,20,39,.98);
+
         backdrop-filter:blur(15px);
+
         flex-direction:column;
+
         justify-content:center;
+
         gap:8px;
+
         transform:translateY(-100%);
+
         transition:.35s;
+
+        padding:30px;
+
       }
+
 
       .nav.open{
+
         transform:translateY(0);
+
       }
+
 
       .nav a{
+
         font-size:20px;
+
         padding:13px 25px;
+
       }
+
+
+      .employee-portal-nav{
+
+        display:block !important;
+
+        text-align:center;
+
+        margin-top:6px;
+
+      }
+
 
       .menu-btn{
+
         display:block;
+
         position:relative;
+
         z-index:1001;
+
       }
+
 
       .header-actions > .btn{
+
         display:none;
+
       }
+
 
       .hero-grid{
+
         grid-template-columns:1fr;
+
         gap:45px;
+
       }
+
 
       .hero-copy{
+
         text-align:center;
+
       }
+
 
       .hero-description{
+
         margin-left:auto;
+
         margin-right:auto;
+
       }
+
 
       .hero-buttons{
+
         justify-content:center;
+
       }
+
 
       .hero-contact{
+
         justify-content:center;
+
       }
+
 
       .hero-visual{
+
         min-height:400px;
+
       }
+
 
       .about-grid{
+
         grid-template-columns:1fr;
+
       }
+
 
       .how-grid{
+
         grid-template-columns:1fr 1fr;
+
       }
+
 
       .services-grid{
+
         grid-template-columns:1fr 1fr;
+
       }
+
 
       .why-grid{
+
         grid-template-columns:1fr 1fr;
+
       }
 
+
       .contact-grid{
+
         grid-template-columns:1fr;
+
       }
+
     }
+
 
     @media(max-width:700px){
 
       .container{
-        width:min(var(--max),calc(100% - 28px));
+
+        width:min(
+          var(--max),
+          calc(100% - 28px)
+        );
+
       }
+
 
       .section{
+
         padding:80px 0;
+
       }
+
 
       .hero{
+
         padding:140px 0 70px;
+
         min-height:auto;
+
       }
+
 
       .hero h1{
+
         font-size:38px;
+
       }
+
 
       .hero-description{
+
         font-size:15px;
+
       }
+
 
       .hero-buttons{
+
         flex-direction:column;
+
       }
+
 
       .hero-buttons .btn{
+
         width:100%;
+
       }
+
 
       .hero-visual{
+
         min-height:340px;
+
       }
+
 
       .visual-card{
+
         max-width:330px;
+
       }
+
 
       .trust-grid{
+
         grid-template-columns:1fr 1fr;
+
       }
+
 
       .trust-item{
-        border-bottom:1px solid var(--line);
+
+        border-bottom:
+          1px solid var(--line);
+
       }
+
 
       .service-tabs{
+
         grid-template-columns:1fr;
+
       }
+
 
       .services-grid{
+
         grid-template-columns:1fr;
+
       }
+
 
       .sector-grid{
+
         grid-template-columns:1fr 1fr;
+
       }
+
 
       .how-grid{
+
         grid-template-columns:1fr;
+
       }
+
 
       .why-grid{
+
         grid-template-columns:1fr;
+
       }
+
 
       .client-grid{
+
         grid-template-columns:1fr;
+
       }
+
 
       .client-highlight{
+
         flex-direction:column;
+
         align-items:flex-start;
+
       }
+
 
       .cta-inner{
+
         flex-direction:column;
+
         align-items:flex-start;
+
       }
+
 
       .cta .btn{
+
         width:100%;
+
       }
+
 
       .form-row{
+
         grid-template-columns:1fr;
+
       }
+
 
       .footer-grid{
+
         grid-template-columns:1fr;
+
         gap:30px;
+
       }
+
 
       .copyright{
+
         flex-direction:column;
+
       }
 
+
       .floating-actions{
+
         left:14px;
+
         bottom:14px;
+
       }
+
     }
+
 
     @media(max-width:430px){
 
       .hero h1{
+
         font-size:33px;
+
       }
+
 
       .stats{
+
         grid-template-columns:1fr;
+
       }
+
 
       .sector-grid{
+
         grid-template-columns:1fr;
+
       }
+
 
       .logo-text small{
-        display:none;
-      }
-    }
-  </style>
 
-<style id="employee-portal-nav-style">
-  .employee-portal-nav{
-    color:#fff !important;
-    background:linear-gradient(135deg,#1F9C82,#5FCBB2) !important;
-    font-weight:900 !important;
-    box-shadow:0 8px 24px rgba(31,156,130,.22);
-  }
-  .employee-portal-nav:hover{transform:translateY(-1px);}
-  .employee-portal-hero{box-shadow:0 14px 30px rgba(31,156,130,.18);}
-  @media(max-width:900px){
-    .employee-portal-nav{display:block !important;text-align:center;margin-top:6px;}
-  }
-</style>
+        display:none;
+
+      }
+
+    }
+
+  </style>
 
 </head>
 
+
 <body>
 
-<!-- ================= HEADER ================= -->
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
 <header class="header" id="header">
+
   <div class="container header-inner">
 
-    <a href="#home" class="logo" aria-label="أبراج - الصفحة الرئيسية">
+
+    <!-- LOGO -->
+
+    <a href="#home"
+       class="logo"
+       aria-label="أبراج - الصفحة الرئيسية">
 
       <svg class="logo-mark"
            viewBox="0 0 64 64"
            xmlns="http://www.w3.org/2000/svg"
            aria-hidden="true">
 
-        <rect width="64" height="64" rx="16" fill="#0C2340"/>
-        <rect x="14" y="22" width="14" height="30" fill="#C89B3C"/>
-        <rect x="36" y="14" width="14" height="38" fill="#1F9C82"/>
-        <rect x="10" y="52" width="44" height="4" fill="#F6F4EF"/>
+        <rect
+          width="64"
+          height="64"
+          rx="16"
+          fill="#0C2340"/>
+
+        <rect
+          x="14"
+          y="22"
+          width="14"
+          height="30"
+          fill="#C89B3C"/>
+
+        <rect
+          x="36"
+          y="14"
+          width="14"
+          height="38"
+          fill="#1F9C82"/>
+
+        <rect
+          x="10"
+          y="52"
+          width="44"
+          height="4"
+          fill="#F6F4EF"/>
 
       </svg>
 
+
       <span class="logo-text">
+
         <strong>أبراج</strong>
-        <small>ABRAJ GROUP · EST. 2002</small>
+
+        <small>
+          ABRAJ GROUP · EST. 2002
+        </small>
+
       </span>
 
     </a>
 
-    <nav class="nav" id="mainNav" aria-label="القائمة الرئيسية">
 
-      <a href="#about">من نحن</a>
-      <a href="#services">خدماتنا</a>
-      <a href="#sectors">القطاعات</a>
-      <a href="#why">لماذا أبراج</a>
-      <a href="#clients">عملاؤنا</a>
-      <a href="#contact">تواصل معنا</a>
+    <!-- MAIN NAVIGATION -->
 
-    <a href="/employee-portal.html" class="employee-portal-nav" aria-label="بوابة الموظفين">بوابة الموظفين</a>
-      </nav>
+    <nav
+      class="nav"
+      id="mainNav"
+      aria-label="القائمة الرئيسية">
+
+      <a href="#about">
+        من نحن
+      </a>
+
+      <a href="#services">
+        خدماتنا
+      </a>
+
+      <a href="#sectors">
+        القطاعات
+      </a>
+
+      <a href="#why">
+        لماذا أبراج
+      </a>
+
+      <a href="#clients">
+        عملاؤنا
+      </a>
+
+      <a href="#contact">
+        تواصل معنا
+      </a>
+
+
+      <!-- EMPLOYEE PORTAL -->
+
+      <a
+        href="/employee-portal.html"
+        class="employee-portal-nav"
+        aria-label="بوابة الموظفين">
+
+        بوابة الموظفين
+
+      </a>
+
+    </nav>
+
+
+    <!-- HEADER ACTIONS -->
 
     <div class="header-actions">
 
-      <a href="#contact" class="btn btn-gold">
+      <a
+        href="#contact"
+        class="btn btn-gold">
+
         اطلب عرض سعر
+
       </a>
+
 
       <button
         class="menu-btn"
@@ -1524,62 +2928,133 @@
     </div>
 
   </div>
+
 </header>
 
 
-<!-- ================= HERO ================= -->
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
 
 <main>
 
-<section class="hero" id="home">
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+  class="hero"
+  id="home">
 
   <div class="container hero-grid">
 
+
     <div class="hero-copy reveal">
 
+
       <div class="eyebrow">
+
         شريكك المساند منذ 2002
+
       </div>
+
 
       <h1>
+
         أمن منشأتك،
-        <span>ونجاح تشغيلها</span>
+        <span>
+          ونجاح تشغيلها
+        </span>
+
         <br>
-        <em>من مكان واحد.</em>
+
+        <em>
+          من مكان واحد.
+        </em>
+
       </h1>
 
+
       <p class="hero-description">
-        أبراج شركة أردنية متخصصة في الحراسات الأمنية والخدمات المساندة
-        للمنشآت الصناعية والتجارية، من خلال كوادر مؤهلة وإشراف ميداني
-        وحلول مصممة حسب طبيعة كل موقع.
+
+        أبراج شركة أردنية متخصصة في الحراسات الأمنية والخدمات
+        المساندة للمنشآت الصناعية والتجارية، من خلال كوادر مؤهلة
+        وإشراف ميداني وحلول مصممة حسب طبيعة كل موقع.
+
       </p>
 
+
       <div class="hero-buttons">
-        <a href="/employee-portal.html" class="btn btn-teal employee-portal-hero">بوابة الموظفين <span aria-hidden="true">↗</span></a>
-        <a href="/employee-portal.html" class="btn btn-teal employee-portal-hero">بوابة الموظفين <span aria-hidden="true">↗</span></a>
-        
 
-        <a href="#contact" class="btn btn-gold">
+
+        <!-- EMPLOYEE PORTAL -->
+
+        <a
+          href="/employee-portal.html"
+          class="btn btn-teal employee-portal-hero">
+
+          بوابة الموظفين
+
+          <span aria-hidden="true">
+            ↗
+          </span>
+
+        </a>
+
+
+        <!-- QUOTE -->
+
+        <a
+          href="#contact"
+          class="btn btn-gold">
+
           اطلب عرض سعر
+
         </a>
 
-        <a href="#services" class="btn btn-outline">
+
+        <!-- SERVICES -->
+
+        <a
+          href="#services"
+          class="btn btn-outline">
+
           استكشف خدماتنا
+
         </a>
+
 
       </div>
+
 
       <div class="hero-contact">
 
+
         <span class="hero-contact-icon">
+
           ☎
+
         </span>
 
+
         <div>
-          <small>للاستفسار المباشر</small>
-          <a href="tel:+962790234710">
-            <strong>+962 79 023 4710</strong>
+
+          <small>
+            للاستفسار المباشر
+          </small>
+
+
+          <a
+            href="tel:+962790234710">
+
+            <strong>
+              +962 79 023 4710
+            </strong>
+
           </a>
+
         </div>
 
       </div>
@@ -1587,27 +3062,44 @@
     </div>
 
 
+
     <div class="hero-visual reveal">
+
 
       <div class="visual-card">
 
+
         <div class="visual-building">
+
           <div class="windows"></div>
+
         </div>
+
 
         <div class="visual-building two">
+
           <div class="windows"></div>
+
         </div>
+
 
         <div class="visual-label label-one">
+
           <span class="label-dot"></span>
+
           الحراسات الأمنية
+
         </div>
 
+
         <div class="visual-label label-two">
+
           <span class="label-dot"></span>
+
           الخدمات المساندة
+
         </div>
+
 
       </div>
 
@@ -1618,110 +3110,216 @@
 </section>
 
 
-<!-- ================= TRUST ================= -->
+
+<!-- =====================================================
+     TRUST
+===================================================== -->
 
 <section class="trust">
 
   <div class="container trust-grid">
 
-    <div class="trust-item">
-      <strong>2002</strong>
-      <span>سنة التأسيس</span>
-    </div>
 
     <div class="trust-item">
-      <strong>24/7</strong>
-      <span>تغطية ومتابعة تشغيلية</span>
+
+      <strong>
+        2002
+      </strong>
+
+      <span>
+        سنة التأسيس
+      </span>
+
     </div>
 
-    <div class="trust-item">
-      <strong>2</strong>
-      <span>مجالات خدمة متكاملة</span>
-    </div>
 
     <div class="trust-item">
-      <strong>+20</strong>
-      <span>عامًا من الخبرة</span>
+
+      <strong>
+        24/7
+      </strong>
+
+      <span>
+        تغطية ومتابعة تشغيلية
+      </span>
+
     </div>
+
+
+    <div class="trust-item">
+
+      <strong>
+        2
+      </strong>
+
+      <span>
+        مجالات خدمة متكاملة
+      </span>
+
+    </div>
+
+
+    <div class="trust-item">
+
+      <strong>
+        +20
+      </strong>
+
+      <span>
+        عامًا من الخبرة
+      </span>
+
+    </div>
+
 
   </div>
 
 </section>
 
 
-<!-- ================= ABOUT ================= -->
 
-<section class="section about" id="about">
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+  class="section about"
+  id="about">
+
 
   <div class="container">
 
+
     <div class="section-head reveal">
 
-      <div class="eyebrow" style="color:var(--navy)">
+
+      <div
+        class="eyebrow"
+        style="color:var(--navy)">
+
         من نحن
+
       </div>
 
+
       <h2>
+
         شركة واحدة، وحلول متكاملة لمنشأتك
+
       </h2>
 
+
       <p>
+
         أبراج شركة أردنية تعمل في مجال الحراسات الأمنية والخدمات
         المساندة، وتوفر حلولًا تشغيلية للمنشآت الصناعية والتجارية
         وفق احتياجات الموقع وطبيعة العمل.
+
       </p>
+
 
     </div>
 
+
     <div class="about-grid">
+
 
       <div class="about-copy reveal">
 
-        <h3>رؤيتنا</h3>
+
+        <h3>
+          رؤيتنا
+        </h3>
+
 
         <p>
+
           أن نكون شريكًا موثوقًا للمنشآت في الأردن في مجالي الأمن
           والخدمات المساندة، من خلال الجودة والانضباط والمتابعة
           المستمرة.
+
         </p>
 
-        <h3>رسالتنا</h3>
+
+        <h3>
+          رسالتنا
+        </h3>
+
 
         <p>
+
           تقديم خدمات عملية قابلة للقياس، تعتمد على الكفاءة البشرية
           والإشراف الميداني والالتزام بالمتطلبات القانونية والتشغيلية
           لكل عميل.
+
         </p>
 
+
         <div class="quote">
+
           شريكك المساند الذي يساعدك على التركيز على عملك، بينما نتولى نحن
           جانبًا من احتياجاتك التشغيلية.
+
         </div>
+
 
       </div>
 
 
       <div class="stats reveal">
 
-        <div class="stat-card">
-          <strong>2002</strong>
-          <span>بداية مسيرة أبراج</span>
-        </div>
 
         <div class="stat-card">
-          <strong>24/7</strong>
-          <span>متابعة وتشغيل حسب طبيعة العقد</span>
+
+          <strong>
+            2002
+          </strong>
+
+          <span>
+            بداية مسيرة أبراج
+          </span>
+
         </div>
 
-        <div class="stat-card">
-          <strong>2</strong>
-          <span>الأمن والحراسات + الخدمات المساندة</span>
-        </div>
 
         <div class="stat-card">
-          <strong>+20</strong>
-          <span>عامًا من الخبرة في القطاع</span>
+
+          <strong>
+            24/7
+          </strong>
+
+          <span>
+            متابعة وتشغيل حسب طبيعة العقد
+          </span>
+
         </div>
+
+
+        <div class="stat-card">
+
+          <strong>
+            2
+          </strong>
+
+          <span>
+            الأمن والحراسات + الخدمات المساندة
+          </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+          <strong>
+            +20
+          </strong>
+
+          <span>
+            عامًا من الخبرة في القطاع
+          </span>
+
+        </div>
+
 
       </div>
 
@@ -1732,38 +3330,59 @@
 </section>
 
 
-<!-- ================= SERVICES ================= -->
 
-<section class="section services" id="services">
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section
+  class="section services"
+  id="services">
+
 
   <div class="container">
 
+
     <div class="section-head reveal">
 
+
       <div class="eyebrow">
+
         خدماتنا
+
       </div>
 
+
       <h2>
+
         حلول مصممة حسب طبيعة منشأتك
+
       </h2>
 
+
       <p>
+
         من الحراسة والحماية إلى النظافة والصيانة وتوفير العمالة،
         نوفر لك الخدمة ضمن نظام واضح وإشراف مستمر.
+
       </p>
+
 
     </div>
 
 
     <div class="service-tabs reveal">
 
+
       <button
         class="service-tab active"
         type="button"
         data-service="security">
 
-        <strong>الخدمات الأمنية</strong>
+        <strong>
+          الخدمات الأمنية
+        </strong>
+
         <span>
           حراسة، تفتيش، حماية ومتابعة ميدانية
         </span>
@@ -1776,140 +3395,286 @@
         type="button"
         data-service="support">
 
-        <strong>الخدمات المساندة</strong>
+        <strong>
+          الخدمات المساندة
+        </strong>
+
         <span>
           تنظيف، صيانة، هيلبر، عمالة وإدارة مشاريع
         </span>
 
       </button>
 
+
     </div>
+
 
 
     <!-- SECURITY -->
 
-    <div class="service-panel active" id="securityPanel">
+    <div
+      class="service-panel active"
+      id="securityPanel">
+
 
       <div class="services-grid">
 
+
         <article class="service-card">
-          <div class="service-icon">🛡</div>
-          <h3>الحراسة والحماية</h3>
+
+          <div class="service-icon">
+            🛡
+          </div>
+
+          <h3>
+            الحراسة والحماية
+          </h3>
+
           <p>
+
             حراسات أمنية للمنشآت والمرافق مع كوادر مؤهلة
             وإشراف ومتابعة ميدانية.
+
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">◉</div>
-          <h3>تقييم المخاطر</h3>
+
+          <div class="service-icon">
+            ◉
+          </div>
+
+          <h3>
+            تقييم المخاطر
+          </h3>
+
           <p>
+
             دراسة طبيعة الموقع والاحتياجات الأمنية ووضع
             خطة تشغيل مناسبة للمنشأة.
+
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">✓</div>
-          <h3>الفحص والتفتيش</h3>
+
+          <div class="service-icon">
+            ✓
+          </div>
+
+          <h3>
+            الفحص والتفتيش
+          </h3>
+
           <p>
+
             تنظيم عمليات تفتيش المركبات والزوار والموظفين
             وفق إجراءات الموقع.
+
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">24</div>
-          <h3>المتابعة والطوارئ</h3>
+
+          <div class="service-icon">
+            24
+          </div>
+
+          <h3>
+            المتابعة والطوارئ
+          </h3>
+
           <p>
+
             متابعة تشغيلية واتصال ميداني حسب نظام العمل
             وطبيعة العقد.
+
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">↗</div>
-          <h3>الإشراف الميداني</h3>
+
+          <div class="service-icon">
+            ↗
+          </div>
+
+          <h3>
+            الإشراف الميداني
+          </h3>
+
           <p>
+
             متابعة أداء العناصر والتأكد من الالتزام بالتعليمات
             ومتطلبات العميل.
+
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">★</div>
-          <h3>التدريب والتأهيل</h3>
+
+          <div class="service-icon">
+            ★
+          </div>
+
+          <h3>
+            التدريب والتأهيل
+          </h3>
+
           <p>
+
             تدريب الكوادر على التعليمات الأساسية والسلامة
             والتعامل مع الحالات الطارئة.
+
           </p>
+
         </article>
+
 
       </div>
 
     </div>
 
 
+
     <!-- SUPPORT -->
 
-    <div class="service-panel" id="supportPanel">
+    <div
+      class="service-panel"
+      id="supportPanel">
+
 
       <div class="services-grid">
 
+
         <article class="service-card">
-          <div class="service-icon">✦</div>
-          <h3>التنظيف اليومي</h3>
+
+          <div class="service-icon">
+            ✦
+          </div>
+
+          <h3>
+            التنظيف اليومي
+          </h3>
+
           <p>
+
             تنظيف المكاتب والمرافق والممرات والساحات
             وفق برامج تشغيلية مخصصة.
+
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">+</div>
-          <h3>التعقيم والتطهير</h3>
+
+          <div class="service-icon">
+            +
+          </div>
+
+          <h3>
+            التعقيم والتطهير
+          </h3>
+
           <p>
+
             خدمات التعقيم ومكافحة الحشرات والقوارض حسب
             احتياجات المنشأة.
+
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">◆</div>
-          <h3>الأرضيات والرخام</h3>
+
+          <div class="service-icon">
+            ◆
+          </div>
+
+          <h3>
+            الأرضيات والرخام
+          </h3>
+
           <p>
+
             تنظيف وتلميع الأرضيات والرخام وتشميع الأسطح
             حسب طبيعة المادة.
+
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">▦</div>
-          <h3>الواجهات الزجاجية</h3>
+
+          <div class="service-icon">
+            ▦
+          </div>
+
+          <h3>
+            الواجهات الزجاجية
+          </h3>
+
           <p>
+
             تنظيف الواجهات الزجاجية والألمنيوم باستخدام
             المعدات المناسبة للموقع.
+
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">⚙</div>
-          <h3>الصيانة والهيلبر</h3>
+
+          <div class="service-icon">
+            ⚙
+          </div>
+
+          <h3>
+            الصيانة والهيلبر
+          </h3>
+
           <p>
+
             توفير عمالة مساندة للتحميل والتنزيل والإنتاج
             وتنظيم المخازن وأعمال الدعم.
+
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">▣</div>
-          <h3>إدارة المشاريع</h3>
+
+          <div class="service-icon">
+            ▣
+          </div>
+
+          <h3>
+            إدارة المشاريع
+          </h3>
+
           <p>
+
             إدارة ومتابعة مشاريع الخدمات المساندة وبرامج
             ما بعد البناء حسب نطاق العمل.
+
           </p>
+
         </article>
+
 
       </div>
 
@@ -1920,61 +3685,129 @@
 </section>
 
 
-<!-- ================= SECTORS ================= -->
 
-<section class="section sectors" id="sectors">
+<!-- =====================================================
+     SECTORS
+===================================================== -->
+
+<section
+  class="section sectors"
+  id="sectors">
+
 
   <div class="container">
 
+
     <div class="section-head reveal">
 
-      <div class="eyebrow" style="color:var(--navy)">
+
+      <div
+        class="eyebrow"
+        style="color:var(--navy)">
+
         القطاعات
+
       </div>
 
+
       <h2>
+
         نخدم المنشآت التي تحتاج إلى تشغيل منضبط
+
       </h2>
 
+
       <p>
+
         نصمم نطاق الخدمة بحسب حجم المنشأة وساعات التشغيل
         وعدد الأفراد وطبيعة المهام المطلوبة.
+
       </p>
+
 
     </div>
 
 
     <div class="sector-grid">
 
-      <div class="sector reveal">
-        <strong>المصانع والمنشآت الصناعية</strong>
-        <span>حراسة وخدمات تشغيلية مساندة للمواقع الصناعية.</span>
-      </div>
 
       <div class="sector reveal">
-        <strong>المستودعات والمخازن</strong>
-        <span>أمن، تنظيم، تحميل وتنزيل وخدمات دعم.</span>
+
+        <strong>
+          المصانع والمنشآت الصناعية
+        </strong>
+
+        <span>
+          حراسة وخدمات تشغيلية مساندة للمواقع الصناعية.
+        </span>
+
       </div>
 
-      <div class="sector reveal">
-        <strong>الشركات والمكاتب</strong>
-        <span>خدمات أمن ونظافة وتشغيل للمكاتب والمنشآت.</span>
-      </div>
 
       <div class="sector reveal">
-        <strong>البنوك والمؤسسات المالية</strong>
-        <span>خدمات أمنية وفق متطلبات الموقع والإجراءات المعتمدة.</span>
+
+        <strong>
+          المستودعات والمخازن
+        </strong>
+
+        <span>
+          أمن، تنظيم، تحميل وتنزيل وخدمات دعم.
+        </span>
+
       </div>
 
-      <div class="sector reveal">
-        <strong>الفنادق والمنشآت السياحية</strong>
-        <span>حراسة ونظافة وخدمات تشغيلية مساندة.</span>
-      </div>
 
       <div class="sector reveal">
-        <strong>المرافق والمراكز التجارية</strong>
-        <span>حلول تشغيلية قابلة للتوسع حسب حجم الموقع.</span>
+
+        <strong>
+          الشركات والمكاتب
+        </strong>
+
+        <span>
+          خدمات أمن ونظافة وتشغيل للمكاتب والمنشآت.
+        </span>
+
       </div>
+
+
+      <div class="sector reveal">
+
+        <strong>
+          البنوك والمؤسسات المالية
+        </strong>
+
+        <span>
+          خدمات أمنية وفق متطلبات الموقع والإجراءات المعتمدة.
+        </span>
+
+      </div>
+
+
+      <div class="sector reveal">
+
+        <strong>
+          الفنادق والمنشآت السياحية
+        </strong>
+
+        <span>
+          حراسة ونظافة وخدمات تشغيلية مساندة.
+        </span>
+
+      </div>
+
+
+      <div class="sector reveal">
+
+        <strong>
+          المرافق والمراكز التجارية
+        </strong>
+
+        <span>
+          حلول تشغيلية قابلة للتوسع حسب حجم الموقع.
+        </span>
+
+      </div>
+
 
     </div>
 
@@ -1983,67 +3816,131 @@
 </section>
 
 
-<!-- ================= HOW WE WORK ================= -->
 
-<section class="section how" id="how">
+<!-- =====================================================
+     HOW WE WORK
+===================================================== -->
+
+<section
+  class="section how"
+  id="how">
+
 
   <div class="container">
 
+
     <div class="section-head reveal">
 
-      <div class="eyebrow" style="color:var(--navy)">
+
+      <div
+        class="eyebrow"
+        style="color:var(--navy)">
+
         آلية العمل
+
       </div>
 
+
       <h2>
+
         من دراسة الاحتياج إلى المتابعة المستمرة
+
       </h2>
 
+
       <p>
+
         نعمل وفق خطوات واضحة تساعد العميل على معرفة ما سيحصل عليه
         وكيف تتم متابعة الخدمة.
+
       </p>
+
 
     </div>
 
 
     <div class="how-grid">
 
+
       <article class="how-card reveal">
-        <div class="how-number">01</div>
-        <h3>زيارة وتقييم</h3>
+
+        <div class="how-number">
+          01
+        </div>
+
+        <h3>
+          زيارة وتقييم
+        </h3>
+
         <p>
+
           نفهم طبيعة الموقع وعدد ساعات العمل والاحتياج
           التشغيلي والأمني.
+
         </p>
+
       </article>
 
+
       <article class="how-card reveal">
-        <div class="how-number">02</div>
-        <h3>خطة تشغيل</h3>
+
+        <div class="how-number">
+          02
+        </div>
+
+        <h3>
+          خطة تشغيل
+        </h3>
+
         <p>
+
           نحدد نطاق العمل وعدد الأفراد ونظام الإشراف
           وآلية المتابعة.
+
         </p>
+
       </article>
 
+
       <article class="how-card reveal">
-        <div class="how-number">03</div>
-        <h3>التنفيذ</h3>
+
+        <div class="how-number">
+          03
+        </div>
+
+        <h3>
+          التنفيذ
+        </h3>
+
         <p>
+
           نبدأ التشغيل وفق خطة العمل والتعليمات المتفق
           عليها مع العميل.
+
         </p>
+
       </article>
 
+
       <article class="how-card reveal">
-        <div class="how-number">04</div>
-        <h3>الإشراف والتحسين</h3>
+
+        <div class="how-number">
+          04
+        </div>
+
+        <h3>
+          الإشراف والتحسين
+        </h3>
+
         <p>
+
           متابعة ميدانية وتقارير ومراجعة مستمرة للأداء
           واحتياجات الموقع.
+
         </p>
+
       </article>
+
 
     </div>
 
@@ -2052,85 +3949,169 @@
 </section>
 
 
-<!-- ================= WHY ABRAJ ================= -->
 
-<section class="section why" id="why">
+<!-- =====================================================
+     WHY ABRAJ
+===================================================== -->
+
+<section
+  class="section why"
+  id="why">
+
 
   <div class="container">
 
+
     <div class="section-head reveal">
 
+
       <div class="eyebrow">
+
         لماذا أبراج
+
       </div>
 
+
       <h2>
+
         لأن الخدمة لا تنتهي عند توفير العامل
+
       </h2>
 
+
       <p>
+
         القيمة الحقيقية في الإدارة والمتابعة والانضباط
         واستمرارية مستوى الخدمة.
+
       </p>
+
 
     </div>
 
 
     <div class="why-grid">
 
+
       <article class="why-card reveal">
-        <div class="check">✓</div>
-        <strong>خبرة منذ 2002</strong>
+
+        <div class="check">
+          ✓
+        </div>
+
+        <strong>
+          خبرة منذ 2002
+        </strong>
+
         <p>
+
           خبرة طويلة في التعامل مع متطلبات المنشآت
           والمشاريع التشغيلية.
+
         </p>
+
       </article>
 
+
       <article class="why-card reveal">
-        <div class="check">✓</div>
-        <strong>إشراف ميداني</strong>
+
+        <div class="check">
+          ✓
+        </div>
+
+        <strong>
+          إشراف ميداني
+        </strong>
+
         <p>
+
           متابعة أداء الفرق والتأكد من الالتزام بنطاق
           العمل والتعليمات.
+
         </p>
+
       </article>
 
+
       <article class="why-card reveal">
-        <div class="check">✓</div>
-        <strong>كوادر مؤهلة</strong>
+
+        <div class="check">
+          ✓
+        </div>
+
+        <strong>
+          كوادر مؤهلة
+        </strong>
+
         <p>
+
           اختيار وتوجيه الكوادر بحسب طبيعة الوظيفة
           ومتطلبات الموقع.
+
         </p>
+
       </article>
 
+
       <article class="why-card reveal">
-        <div class="check">✓</div>
-        <strong>مرونة في الحلول</strong>
+
+        <div class="check">
+          ✓
+        </div>
+
+        <strong>
+          مرونة في الحلول
+        </strong>
+
         <p>
+
           تصميم الخدمة وفق عدد الساعات والمواقع
           والاحتياج الفعلي للعميل.
+
         </p>
+
       </article>
 
+
       <article class="why-card reveal">
-        <div class="check">✓</div>
-        <strong>متابعة مستمرة</strong>
+
+        <div class="check">
+          ✓
+        </div>
+
+        <strong>
+          متابعة مستمرة
+        </strong>
+
         <p>
+
           التواصل مع العميل ومراجعة الأداء والملاحظات
           التشغيلية.
+
         </p>
+
       </article>
 
+
       <article class="why-card reveal">
-        <div class="check">✓</div>
-        <strong>حلول متكاملة</strong>
+
+        <div class="check">
+          ✓
+        </div>
+
+        <strong>
+          حلول متكاملة
+        </strong>
+
         <p>
+
           إمكانية الجمع بين الأمن والخدمات المساندة
           ضمن منظومة واحدة.
+
         </p>
+
       </article>
+
 
     </div>
 
@@ -2139,113 +4120,262 @@
 </section>
 
 
-<!-- ================= CLIENTS ================= -->
 
-<section class="section clients" id="clients">
+<!-- =====================================================
+     CLIENTS
+===================================================== -->
+
+<section
+  class="section clients"
+  id="clients">
+
 
   <div class="container">
 
+
     <div class="section-head reveal">
 
-      <div class="eyebrow" style="color:var(--navy)">
+
+      <div
+        class="eyebrow"
+        style="color:var(--navy)">
+
         عملاؤنا
+
       </div>
+
 
       <h2>
         شراكات نفخر بها
       </h2>
 
+
       <p>
+
         نعمل مع منشآت صناعية وتجارية ومؤسسات مختلفة،
         ونؤمن أن أفضل شهادة على الخدمة هي استمرار العلاقة.
+
       </p>
+
 
     </div>
 
 
     <div class="client-highlight reveal">
 
+
       <div>
-        <strong>شراكات طويلة الأمد</strong>
+
+        <strong>
+          شراكات طويلة الأمد
+        </strong>
+
         <span>
+
           علاقات تشغيلية تمتد لسنوات مع عدد من عملائنا.
+
         </span>
+
       </div>
+
 
       <div class="client-years">
         +20
       </div>
+
 
     </div>
 
 
     <div class="client-grid">
 
-      <div class="client-card reveal">
-        <strong>مدينة ضليل الصناعية</strong>
-        <span>ضليل</span>
-        <div class="status">علاقة مستمرة</div>
-      </div>
 
       <div class="client-card reveal">
-        <strong>مركز جمارك ضليل</strong>
-        <span>ضليل</span>
-        <div class="status">علاقة مستمرة</div>
+
+        <strong>
+          مدينة ضليل الصناعية
+        </strong>
+
+        <span>
+          ضليل
+        </span>
+
+        <div class="status">
+          علاقة مستمرة
+        </div>
+
       </div>
 
-      <div class="client-card reveal">
-        <strong>Trans Cable Jordan</strong>
-        <span>ضليل</span>
-        <div class="status">علاقة مستمرة</div>
-      </div>
 
       <div class="client-card reveal">
-        <strong>Nobel Apparels</strong>
-        <span>ضليل</span>
-        <div class="status">علاقة مستمرة</div>
+
+        <strong>
+          مركز جمارك ضليل
+        </strong>
+
+        <span>
+          ضليل
+        </span>
+
+        <div class="status">
+          علاقة مستمرة
+        </div>
+
       </div>
 
-      <div class="client-card reveal">
-        <strong>ALPS لصناعة الأغذية</strong>
-        <span>ضليل</span>
-        <div class="status">علاقة مستمرة</div>
-      </div>
 
       <div class="client-card reveal">
-        <strong>Al Manar Wires Cable Industry</strong>
-        <span>ضليل</span>
-        <div class="status">علاقة مستمرة</div>
+
+        <strong>
+          Trans Cable Jordan
+        </strong>
+
+        <span>
+          ضليل
+        </span>
+
+        <div class="status">
+          علاقة مستمرة
+        </div>
+
       </div>
 
-      <div class="client-card reveal">
-        <strong>KEPCO</strong>
-        <span>الأردن</span>
-        <div class="status">عميل حالي</div>
-      </div>
 
       <div class="client-card reveal">
-        <strong>Aramex</strong>
-        <span>الأردن</span>
-        <div class="status">عميل حالي</div>
+
+        <strong>
+          Nobel Apparels
+        </strong>
+
+        <span>
+          ضليل
+        </span>
+
+        <div class="status">
+          علاقة مستمرة
+        </div>
+
       </div>
 
-      <div class="client-card reveal">
-        <strong>DHL Jordan</strong>
-        <span>الأردن</span>
-        <div class="status">عميل حالي</div>
-      </div>
 
       <div class="client-card reveal">
-        <strong>Kempinski Amman</strong>
-        <span>عمّان</span>
-        <div class="status">عميل حالي</div>
+
+        <strong>
+          ALPS لصناعة الأغذية
+        </strong>
+
+        <span>
+          ضليل
+        </span>
+
+        <div class="status">
+          علاقة مستمرة
+        </div>
+
       </div>
 
+
       <div class="client-card reveal">
-        <strong>Orange Jordan</strong>
-        <span>الأردن</span>
-        <div class="status">عميل حالي</div>
+
+        <strong>
+          Al Manar Wires Cable Industry
+        </strong>
+
+        <span>
+          ضليل
+        </span>
+
+        <div class="status">
+          علاقة مستمرة
+        </div>
+
       </div>
+
+
+      <div class="client-card reveal">
+
+        <strong>
+          KEPCO
+        </strong>
+
+        <span>
+          الأردن
+        </span>
+
+        <div class="status">
+          عميل حالي
+        </div>
+
+      </div>
+
+
+      <div class="client-card reveal">
+
+        <strong>
+          Aramex
+        </strong>
+
+        <span>
+          الأردن
+        </span>
+
+        <div class="status">
+          عميل حالي
+        </div>
+
+      </div>
+
+
+      <div class="client-card reveal">
+
+        <strong>
+          DHL Jordan
+        </strong>
+
+        <span>
+          الأردن
+        </span>
+
+        <div class="status">
+          عميل حالي
+        </div>
+
+      </div>
+
+
+      <div class="client-card reveal">
+
+        <strong>
+          Kempinski Amman
+        </strong>
+
+        <span>
+          عمّان
+        </span>
+
+        <div class="status">
+          عميل حالي
+        </div>
+
+      </div>
+
+
+      <div class="client-card reveal">
+
+        <strong>
+          Orange Jordan
+        </strong>
+
+        <span>
+          الأردن
+        </span>
+
+        <div class="status">
+          عميل حالي
+        </div>
+
+      </div>
+
 
     </div>
 
@@ -2254,100 +4384,169 @@
 </section>
 
 
-<!-- ================= CTA ================= -->
+
+<!-- =====================================================
+     CTA
+===================================================== -->
 
 <section class="cta">
 
+
   <div class="container cta-inner">
 
+
     <div>
+
       <h2>
+
         هل تحتاج إلى حل أمني أو تشغيلي لمنشأتك؟
+
       </h2>
 
+
       <p>
+
         أخبرنا بطبيعة الموقع واحتياجك، وسنساعدك في تحديد
         نطاق الخدمة المناسب.
+
       </p>
+
     </div>
 
-    <a href="#contact" class="btn">
+
+    <a
+      href="#contact"
+      class="btn">
+
       اطلب زيارة ميدانية
+
     </a>
+
 
   </div>
 
 </section>
 
 
-<!-- ================= CONTACT ================= -->
 
-<section class="section contact" id="contact">
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+  class="section contact"
+  id="contact">
+
 
   <div class="container contact-grid">
 
+
     <div class="reveal">
 
+
       <div class="eyebrow">
+
         تواصل معنا
+
       </div>
 
+
       <h2>
+
         لنبدأ من احتياج منشأتك
+
       </h2>
 
+
       <p class="contact-intro">
+
         تواصل معنا مباشرة أو أرسل تفاصيل احتياجك،
         وسنرتب معك الخطوة التالية لتقييم الموقع
         وتحديد نطاق العمل المناسب.
+
       </p>
 
 
       <div class="contact-list">
 
+
         <div class="contact-item">
 
-          <div class="contact-icon">☎</div>
+
+          <div class="contact-icon">
+            ☎
+          </div>
+
 
           <div>
+
             <strong>
-              <a href="tel:+962790234710" dir="ltr">
+
+              <a
+                href="tel:+962790234710"
+                dir="ltr">
+
                 +962 79 023 4710
+
               </a>
+
             </strong>
+
 
             <span>
               اتصال مباشر
             </span>
+
           </div>
+
 
         </div>
 
 
+
         <div class="contact-item">
 
-          <div class="contact-icon">✉</div>
+
+          <div class="contact-icon">
+            ✉
+          </div>
+
 
           <div>
+
             <strong>
-              <a href="mailto:abrajcompany.jo@gmail.com">
+
+              <a
+                href="mailto:abrajcompany.jo@gmail.com">
+
                 abrajcompany.jo@gmail.com
+
               </a>
+
             </strong>
+
 
             <span>
               البريد الإلكتروني
             </span>
+
           </div>
+
 
         </div>
 
 
+
         <div class="contact-item">
 
-          <div class="contact-icon">⌖</div>
+
+          <div class="contact-icon">
+            ⌖
+          </div>
+
 
           <div>
+
             <strong>
               سحاب – عمّان
             </strong>
@@ -2355,14 +4554,20 @@
             <span>
               مدينة الملك عبدالله الثاني الصناعية
             </span>
+
           </div>
 
+
         </div>
+
 
       </div>
 
     </div>
 
+
+
+    <!-- QUOTE FORM -->
 
     <form
       class="form reveal"
@@ -2370,19 +4575,35 @@
       action="https://formsubmit.co/abrajcompany.jo@gmail.com"
       method="POST">
 
-      <input type="hidden" name="_subject" value="طلب عرض سعر جديد - موقع أبراج">
 
-      <input type="hidden" name="_captcha" value="false">
+      <input
+        type="hidden"
+        name="_subject"
+        value="طلب عرض سعر جديد - موقع أبراج">
+
+
+      <input
+        type="hidden"
+        name="_captcha"
+        value="false">
+
 
       <input
         type="hidden"
         name="_next"
         value="https://horses2002.com/">
 
+
       <div class="form-row">
 
+
         <div class="field">
-          <label for="name">الاسم الكامل *</label>
+
+
+          <label for="name">
+            الاسم الكامل *
+          </label>
+
 
           <input
             id="name"
@@ -2391,10 +4612,19 @@
             required
             autocomplete="name"
             placeholder="اسمك الكامل">
+
+
         </div>
 
+
+
         <div class="field">
-          <label for="company">اسم الشركة</label>
+
+
+          <label for="company">
+            اسم الشركة
+          </label>
+
 
           <input
             id="company"
@@ -2402,18 +4632,25 @@
             name="company"
             autocomplete="organization"
             placeholder="اسم المنشأة">
+
+
         </div>
+
 
       </div>
 
 
+
       <div class="form-row">
 
+
         <div class="field">
+
 
           <label for="phone">
             رقم الهاتف *
           </label>
+
 
           <input
             id="phone"
@@ -2423,14 +4660,18 @@
             autocomplete="tel"
             placeholder="07xxxxxxxx">
 
+
         </div>
+
 
 
         <div class="field">
 
+
           <label for="email">
             البريد الإلكتروني
           </label>
+
 
           <input
             id="email"
@@ -2439,73 +4680,104 @@
             autocomplete="email"
             placeholder="name@example.com">
 
+
         </div>
+
 
       </div>
 
 
+
       <div class="form-row">
 
+
         <div class="field full">
+
 
           <label for="service">
             الخدمة المطلوبة
           </label>
 
-          <select id="service" name="service">
+
+          <select
+            id="service"
+            name="service">
+
 
             <option value="security">
               خدمات أمنية وحراسات
             </option>
 
+
             <option value="cleaning">
               خدمات تنظيف
             </option>
+
 
             <option value="maintenance">
               صيانة وخدمات مساندة
             </option>
 
+
             <option value="manpower">
               توفير عمالة / هيلبر
             </option>
+
 
             <option value="combined">
               أمن + خدمات مساندة
             </option>
 
+
           </select>
 
+
         </div>
+
 
       </div>
 
 
+
       <div class="form-row">
 
+
         <div class="field full">
+
 
           <label for="message">
             تفاصيل الطلب
           </label>
+
 
           <textarea
             id="message"
             name="message"
             placeholder="اذكر موقع المنشأة، عدد العمال أو الحراس، ساعات العمل، وطبيعة الاحتياج إن أمكن."></textarea>
 
+
         </div>
+
 
       </div>
 
 
-      <button type="submit" class="btn btn-gold">
+
+      <button
+        type="submit"
+        class="btn btn-gold">
+
         إرسال طلب عرض السعر
+
       </button>
 
+
       <p class="form-note">
+
         سيتم استخدام البيانات للتواصل معك بخصوص طلبك فقط.
+
       </p>
+
 
     </form>
 
@@ -2513,121 +4785,265 @@
 
 </section>
 
+
 </main>
 
 
-<!-- ================= FOOTER ================= -->
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
 <footer>
 
+
   <div class="container">
+
 
     <div class="footer-grid">
 
+
+      <!-- COMPANY -->
+
       <div>
 
-        <a href="#home" class="logo">
 
-          <svg class="logo-mark"
-               viewBox="0 0 64 64"
-               xmlns="http://www.w3.org/2000/svg">
+        <a
+          href="#home"
+          class="logo">
 
-            <rect width="64" height="64" rx="16" fill="#0C2340"/>
-            <rect x="14" y="22" width="14" height="30" fill="#C89B3C"/>
-            <rect x="36" y="14" width="14" height="38" fill="#1F9C82"/>
-            <rect x="10" y="52" width="44" height="4" fill="#F6F4EF"/>
+
+          <svg
+            class="logo-mark"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <rect
+              width="64"
+              height="64"
+              rx="16"
+              fill="#0C2340"/>
+
+            <rect
+              x="14"
+              y="22"
+              width="14"
+              height="30"
+              fill="#C89B3C"/>
+
+            <rect
+              x="36"
+              y="14"
+              width="14"
+              height="38"
+              fill="#1F9C82"/>
+
+            <rect
+              x="10"
+              y="52"
+              width="44"
+              height="4"
+              fill="#F6F4EF"/>
 
           </svg>
 
+
           <span class="logo-text">
-            <strong>أبراج</strong>
-            <small>ABRAJ GROUP</small>
+
+            <strong>
+              أبراج
+            </strong>
+
+            <small>
+              ABRAJ GROUP
+            </small>
+
           </span>
+
 
         </a>
 
+
         <p>
+
           شركة أردنية متخصصة في الحراسات الأمنية والخدمات
           المساندة للمنشآت الصناعية والتجارية، بخبرة تمتد
           منذ عام 2002.
+
         </p>
+
 
       </div>
 
 
+
+      <!-- QUICK LINKS -->
+
       <div>
 
-        <h3>روابط سريعة</h3>
+
+        <h3>
+          روابط سريعة
+        </h3>
+
 
         <ul>
 
-          <li><a href="#about">من نحن</a></li>
-          <li><a href="#services">خدماتنا</a></li>
-          <li><a href="#sectors">القطاعات</a></li>
-          <li><a href="#why">لماذا أبراج</a></li>
-          <li><a href="#clients">عملاؤنا</a></li>
+
+          <li>
+            <a href="#about">
+              من نحن
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#services">
+              خدماتنا
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#sectors">
+              القطاعات
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#why">
+              لماذا أبراج
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#clients">
+              عملاؤنا
+            </a>
+          </li>
+
+
+          <!-- EMPLOYEE PORTAL -->
+
+          <li>
+
+            <a href="/employee-portal.html">
+
+              بوابة الموظفين
+
+            </a>
+
+          </li>
+
 
         </ul>
 
       </div>
 
 
+
+      <!-- CONTACT -->
+
       <div>
 
-        <h3>تواصل معنا</h3>
+
+        <h3>
+          تواصل معنا
+        </h3>
+
 
         <ul>
 
+
           <li>
+
             <a href="tel:+962790234710">
+
               +962 79 023 4710
+
             </a>
+
           </li>
 
+
           <li>
+
             <a href="tel:+962798013203">
+
               +962 79 801 3203
+
             </a>
+
           </li>
 
+
           <li>
-            <a href="mailto:abrajcompany.jo@gmail.com">
+
+            <a
+              href="mailto:abrajcompany.jo@gmail.com">
+
               abrajcompany.jo@gmail.com
+
             </a>
+
           </li>
+
 
           <li>
             سحاب – عمّان – الأردن
           </li>
 
+
         </ul>
 
       </div>
 
+
     </div>
+
 
 
     <div class="copyright">
 
-      <span>
-        © <span id="year"></span>
-        أبراج للخدمات الأمنية والمساندة. جميع الحقوق محفوظة.
-      </span>
 
       <span>
-        Amman · Jordan
+
+        ©
+
+        <span id="year"></span>
+
+        أبراج للخدمات الأمنية والمساندة.
+        جميع الحقوق محفوظة.
+
       </span>
+
+
+      <span>
+
+        Amman · Jordan
+
+      </span>
+
 
     </div>
+
 
   </div>
 
 </footer>
 
 
-<!-- ================= FLOATING BUTTONS ================= -->
+
+<!-- =====================================================
+     FLOATING BUTTONS
+===================================================== -->
 
 <div class="floating-actions">
+
+
+  <!-- WHATSAPP -->
 
   <a
     class="float-btn whatsapp"
@@ -2641,6 +5057,8 @@
   </a>
 
 
+  <!-- PHONE -->
+
   <a
     class="float-btn phone"
     href="tel:+962790234710"
@@ -2650,6 +5068,8 @@
 
   </a>
 
+
+  <!-- TOP -->
 
   <button
     class="float-btn top-btn"
@@ -2661,12 +5081,17 @@
 
   </button>
 
+
 </div>
 
 
-<!-- ================= JAVASCRIPT ================= -->
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 
 <script>
+
 
   /* ================= YEAR ================= */
 
@@ -2674,195 +5099,301 @@
     new Date().getFullYear();
 
 
+
   /* ================= HEADER ================= */
 
-  const header = document.getElementById("header");
+  const header =
+    document.getElementById("header");
 
-  window.addEventListener("scroll", () => {
 
-    header.classList.toggle(
-      "scrolled",
-      window.scrollY > 40
-    );
+  window.addEventListener(
+    "scroll",
+    () => {
 
-  }, {passive:true});
+      header.classList.toggle(
+        "scrolled",
+        window.scrollY > 40
+      );
+
+    },
+    {
+      passive:true
+    }
+  );
+
 
 
   /* ================= MOBILE MENU ================= */
 
-  const menuBtn = document.getElementById("menuBtn");
-  const mainNav = document.getElementById("mainNav");
-
-  menuBtn.addEventListener("click", () => {
-
-    const opened =
-      mainNav.classList.toggle("open");
-
-    menuBtn.setAttribute(
-      "aria-expanded",
-      opened ? "true" : "false"
-    );
-
-    menuBtn.textContent =
-      opened ? "×" : "☰";
-
-    document.body.classList.toggle(
-      "menu-open",
-      opened
-    );
-
-  });
+  const menuBtn =
+    document.getElementById("menuBtn");
 
 
-  document.querySelectorAll("#mainNav a")
-    .forEach(link => {
+  const mainNav =
+    document.getElementById("mainNav");
 
-      link.addEventListener("click", () => {
 
-        mainNav.classList.remove("open");
+  menuBtn.addEventListener(
+    "click",
+    () => {
 
-        menuBtn.setAttribute(
-          "aria-expanded",
-          "false"
+
+      const opened =
+        mainNav.classList.toggle("open");
+
+
+      menuBtn.setAttribute(
+        "aria-expanded",
+        opened ? "true" : "false"
+      );
+
+
+      menuBtn.textContent =
+        opened ? "×" : "☰";
+
+
+      document.body.classList.toggle(
+        "menu-open",
+        opened
+      );
+
+    }
+  );
+
+
+
+  /* ================= CLOSE MOBILE MENU ================= */
+
+  document
+    .querySelectorAll("#mainNav a")
+    .forEach(
+      link => {
+
+        link.addEventListener(
+          "click",
+          () => {
+
+
+            mainNav.classList.remove(
+              "open"
+            );
+
+
+            menuBtn.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+
+            menuBtn.textContent =
+              "☰";
+
+
+            document.body.classList.remove(
+              "menu-open"
+            );
+
+          }
         );
 
-        menuBtn.textContent = "☰";
+      }
+    );
 
-        document.body.classList.remove(
-          "menu-open"
-        );
-
-      });
-
-    });
 
 
   /* ================= SERVICES TABS ================= */
 
   const serviceTabs =
-    document.querySelectorAll(".service-tab");
+    document.querySelectorAll(
+      ".service-tab"
+    );
+
 
   const securityPanel =
-    document.getElementById("securityPanel");
+    document.getElementById(
+      "securityPanel"
+    );
+
 
   const supportPanel =
-    document.getElementById("supportPanel");
+    document.getElementById(
+      "supportPanel"
+    );
 
 
-  serviceTabs.forEach(tab => {
+  serviceTabs.forEach(
+    tab => {
 
-    tab.addEventListener("click", () => {
 
-      const selected =
-        tab.dataset.service;
+      tab.addEventListener(
+        "click",
+        () => {
 
-      serviceTabs.forEach(item => {
 
-        item.classList.toggle(
-          "active",
-          item === tab
-        );
+          const selected =
+            tab.dataset.service;
 
-      });
 
-      securityPanel.classList.toggle(
-        "active",
-        selected === "security"
+          serviceTabs.forEach(
+            item => {
+
+              item.classList.toggle(
+                "active",
+                item === tab
+              );
+
+            }
+          );
+
+
+          securityPanel.classList.toggle(
+            "active",
+            selected === "security"
+          );
+
+
+          supportPanel.classList.toggle(
+            "active",
+            selected === "support"
+          );
+
+        }
       );
 
-      supportPanel.classList.toggle(
-        "active",
-        selected === "support"
-      );
+    }
+  );
 
-    });
-
-  });
 
 
   /* ================= REVEAL ================= */
 
   const revealObserver =
     new IntersectionObserver(
+
       entries => {
 
-        entries.forEach(entry => {
 
-          if(entry.isIntersecting){
+        entries.forEach(
+          entry => {
 
-            entry.target.classList.add(
-              "visible"
-            );
 
-            revealObserver.unobserve(
-              entry.target
-            );
+            if(entry.isIntersecting){
+
+
+              entry.target.classList.add(
+                "visible"
+              );
+
+
+              revealObserver.unobserve(
+                entry.target
+              );
+
+            }
 
           }
-
-        });
+        );
 
       },
+
       {
         threshold:.1
       }
+
     );
 
 
   document
     .querySelectorAll(".reveal")
-    .forEach(element => {
+    .forEach(
+      element => {
 
-      revealObserver.observe(element);
+        revealObserver.observe(
+          element
+        );
 
-    });
+      }
+    );
+
 
 
   /* ================= BACK TO TOP ================= */
 
   const topBtn =
-    document.getElementById("topBtn");
-
-
-  window.addEventListener("scroll", () => {
-
-    topBtn.classList.toggle(
-      "show",
-      window.scrollY > 600
+    document.getElementById(
+      "topBtn"
     );
 
-  }, {passive:true});
+
+  window.addEventListener(
+    "scroll",
+    () => {
 
 
-  topBtn.addEventListener("click", () => {
+      topBtn.classList.toggle(
+        "show",
+        window.scrollY > 600
+      );
 
-    window.scrollTo({
-      top:0,
-      behavior:"smooth"
-    });
 
-  });
+    },
+    {
+      passive:true
+    }
+  );
+
+
+  topBtn.addEventListener(
+    "click",
+    () => {
+
+
+      window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+      });
+
+
+    }
+  );
+
 
 
   /* ================= FORM ================= */
 
   const form =
-    document.getElementById("quoteForm");
+    document.getElementById(
+      "quoteForm"
+    );
 
 
-  form.addEventListener("submit", () => {
+  form.addEventListener(
+    "submit",
+    () => {
 
-    const button =
-      form.querySelector("button");
 
-    button.textContent =
-      "جاري إرسال الطلب...";
+      const button =
+        form.querySelector("button");
 
-    button.disabled = true;
 
-  });
+      button.textContent =
+        "جاري إرسال الطلب...";
+
+
+      button.disabled =
+        true;
+
+
+    }
+  );
+
 
 </script>
 
+
 </body>
+
 </html>
