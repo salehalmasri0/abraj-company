@@ -10,8 +10,23 @@ database_id = "ced75d3a-d7a6-42fd-8d06-ae8f1f219655"
 [vars]
 CORS_ORIGIN = "https://horses2002.com"
 
-# Secrets are configured in Cloudflare, never committed to Git:
-# SESSION_SECRET
-# TWILIO_ACCOUNT_SID
-# TWILIO_AUTH_TOKEN
-# TWILIO_VERIFY_SERVICE_SID
+# Cloudflare Secrets Store bindings. Secret values are never committed to Git.
+[[secrets_store_secrets]]
+binding = "SESSION_SECRET"
+store_id = "99e23538b9db4c8babacc31ddf4e7fc0"
+secret_name = "SESSION_SECRET"
+
+[[secrets_store_secrets]]
+binding = "TWILIO_ACCOUNT_SID"
+store_id = "99e23538b9db4c8babacc31ddf4e7fc0"
+secret_name = "TWILIO_ACCOUNT_SID"
+
+[[secrets_store_secrets]]
+binding = "TWILIO_AUTH_TOKEN"
+store_id = "99e23538b9db4c8babacc31ddf4e7fc0"
+secret_name = "TWILIO_AUTH_TOKEN"
+
+[[secrets_store_secrets]]
+binding = "TWILIO_VERIFY_SERVICE_SID"
+store_id = "99e23538b9db4c8babacc31ddf4e7fc0"
+secret_name = "TWILIO_VERIFY_SERVICE_SID"
