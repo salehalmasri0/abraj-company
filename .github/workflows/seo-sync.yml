@@ -1,0 +1,53 @@
+name: SEO consistency
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Align production SEO URLs
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace('https://salehalmasri0.github.io/abraj-company/', 'https://horses2002.com/')
+          s = s.replace('href="favicon.svg"', 'href="/favicon.svg"')
+          marker = '  <meta name="theme-color" content="#071427">'
+          robots = '  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">'
+          if 'name="robots"' not in s:
+              s = s.replace(marker, marker + '\n' + robots, 1)
+          og_url = '  <meta property="og:url" content="https://horses2002.com/">'
+          if 'property="og:url"' not in s:
+              s = s.replace('  <meta property="og:site_name" content="Abraj Company">', '  <meta property="og:site_name" content="Abraj Company">\n' + og_url, 1)
+          twitter = '''\n  <meta name="twitter:card" content="summary">\n  <meta name="twitter:title" content="أبراج | الأمن والخدمات المساندة في الأردن">\n  <meta name="twitter:description" content="حلول أمنية وخدمات مساندة متكاملة للمنشآت الصناعية والتجارية في الأردن منذ 2002.">'''
+          if 'name="twitter:card"' not in s:
+              s = s.replace(og_url, og_url + twitter, 1)
+          s = s.replace('"@type":"LocalBusiness",\n    "name":"Abraj Company",', '"@type":"LocalBusiness",\n    "@id":"https://horses2002.com/#organization",\n    "name":"Abraj Company",', 1)
+          if '"url":"https://horses2002.com/"' not in s:
+              s = s.replace('"alternateName":"أبراج",', '"alternateName":"أبراج",\n    "url":"https://horses2002.com/",', 1)
+          p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No SEO changes needed."
+          else
+            git commit -m "SEO: align production metadata"
+            git push
+          fi
