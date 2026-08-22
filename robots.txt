@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /employee-portal.html
 
-# Primary sitemap for Google and other search engines
 Sitemap: https://horses2002.com/sitemap.xml
