@@ -1,0 +1,72 @@
+name: Repair employee portal duplicates
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Remove duplicate employee portal markup
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          path = Path("index.html")
+          text = path.read_text(encoding="utf-8")
+          original = text
+
+          def keep_first(pattern, text, flags=re.S):
+              seen = False
+              rx = re.compile(pattern, flags)
+              def repl(match):
+                  nonlocal seen
+                  if seen:
+                      return ""
+                  seen = True
+                  return match.group(0)
+              return rx.sub(repl, text)
+
+          # Keep exactly one employee-portal navigation style block.
+          text = keep_first(
+              r'<style\s+id=["\']employee-portal-nav-style["\']>.*?</style>',
+              text,
+          )
+
+          # Keep exactly one employee portal link in the main navigation.
+          text = keep_first(
+              r'\s*<a\s+href=["\']/employee-portal\.html["\']\s+class=["\']employee-portal-nav["\'][^>]*>\s*بوابة الموظفين\s*</a>',
+              text,
+          )
+
+          # Keep exactly one employee portal CTA in the hero.
+          text = keep_first(
+              r'\s*<a\s+href=["\']/employee-portal\.html["\']\s+class=["\']btn btn-teal employee-portal-hero["\'][^>]*>\s*بوابة الموظفين\s*<span[^>]*>↗</span>\s*</a>',
+              text,
+          )
+
+          if text != original:
+              path.write_text(text, encoding="utf-8")
+          else:
+              print("No duplicate employee portal markup found.")
+
+      - name: Commit repaired index
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "index.html is already clean."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "fix: remove duplicated employee portal"
+          git push
