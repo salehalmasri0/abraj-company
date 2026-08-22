@@ -1,0 +1,8 @@
+PRAGMA foreign_keys = ON;
+CREATE TABLE IF NOT EXISTS employees (id INTEGER PRIMARY KEY AUTOINCREMENT,national_id TEXT NOT NULL UNIQUE,employee_number TEXT UNIQUE,full_name TEXT NOT NULL,phone_e164 TEXT NOT NULL,department TEXT,job_title TEXT,status TEXT NOT NULL DEFAULT 'active' CHECK(status IN ('active','inactive')),created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE IF NOT EXISTS salaries (id INTEGER PRIMARY KEY AUTOINCREMENT,employee_id INTEGER NOT NULL REFERENCES employees(id) ON DELETE CASCADE,month TEXT NOT NULL,basic_salary REAL NOT NULL DEFAULT 0,allowances REAL NOT NULL DEFAULT 0,deductions REAL NOT NULL DEFAULT 0,net_salary REAL NOT NULL DEFAULT 0,pdf_url TEXT,created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,UNIQUE(employee_id,month));
+CREATE TABLE IF NOT EXISTS attendance (id INTEGER PRIMARY KEY AUTOINCREMENT,employee_id INTEGER NOT NULL REFERENCES employees(id) ON DELETE CASCADE,work_date TEXT NOT NULL,check_in TEXT,check_out TEXT,status TEXT NOT NULL DEFAULT 'present',notes TEXT,created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,UNIQUE(employee_id,work_date));
+CREATE TABLE IF NOT EXISTS otp_attempts (id INTEGER PRIMARY KEY AUTOINCREMENT,employee_id INTEGER REFERENCES employees(id) ON DELETE CASCADE,national_id_hash TEXT NOT NULL,requested_at INTEGER NOT NULL,verified_at INTEGER,ip_hash TEXT);
+CREATE INDEX IF NOT EXISTS idx_salary_employee_month ON salaries(employee_id,month DESC);
+CREATE INDEX IF NOT EXISTS idx_att_employee_date ON attendance(employee_id,work_date DESC);
+CREATE INDEX IF NOT EXISTS idx_otp_hash_time ON otp_attempts(national_id_hash,requested_at DESC);
