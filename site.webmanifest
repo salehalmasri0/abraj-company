@@ -1,11 +1,11 @@
 {
-  "name": "شركة أبراج الماضونة للخدمات المساندة والأمنية",
+  "name": "أبراج الماضونة",
   "short_name": "أبراج",
-  "lang": "ar",
-  "dir": "rtl",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#071427",
-  "background_color": "#F7F5F0",
-  "description": "الخدمات الأمنية والمساندة والحراسة والتنظيف والصيانة وتوفير العمالة في الأردن"
+  "background_color": "#f7faff",
+  "theme_color": "#06183d",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [{"src":"/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
 }
