@@ -9,7 +9,7 @@ Project URL: `https://pnydgfxcbwvmltrnkcnw.supabase.co`
 - Database: Supabase PostgreSQL.
 - Authorization: PostgreSQL Row Level Security (RLS).
 - Server-only operations: Edge Functions with `SUPABASE_SECRET_KEY`.
-- Legacy Cloudflare D1/Twilio employee API has been removed from the repository.
+- Employee API operations are implemented through Supabase Edge Functions.
 
 ## Database
 
