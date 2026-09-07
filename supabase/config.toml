@@ -1,0 +1,7 @@
+project_id = "pnydgfxcbwvmltrnkcnw"
+
+[functions.request-employee-otp]
+verify_jwt = false
+
+[functions.verify-employee-otp]
+verify_jwt = false
